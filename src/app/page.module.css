@@ -5,6 +5,10 @@
   crema: #fffdd0
 */
 
+.div-height {
+  height: 100vh;
+}
+
 /* LOGO */
 
 .div-logo {
@@ -13,14 +17,14 @@
   position: relative;
   margin-bottom: 60px;
   overflow: hidden;
-  
+
 }
 
 .logo-principal {
   width: 90px;
   position: relative;
   z-index: 1;
-  
+
 }
 
 .div-lazos {
@@ -36,19 +40,19 @@
 .lazoNaranja {
   width: 260px;
   margin-left: -95px;
-  max-width: 90vw; 
+  max-width: 90vw;
 
 }
 
 .lazoVerde {
   width: 260px;
   transform: rotate(180deg);
-  max-width: 90vw; 
+  max-width: 90vw;
 }
 
 /* titulo */
 
-.div-textos{
+.div-textos {
   display: flex;
   flex-direction: column;
   gap: 30px;
@@ -69,48 +73,108 @@
 
 /* texto principal */
 
-.texto-principal{
+.texto-principal {
   font-size: 20px;
   width: 80%;
   text-align: center;
   margin: 0 auto;
   color: #FDFDFB;
   margin-top: 67px;
-  margin-bottom: 149px;
+  margin-bottom: 199px;
 }
 
-.texto-secundario{
+.texto-secundario {
   font-size: 20px;
   width: 80%;
   text-align: center;
   margin: 0 auto;
   color: #FDFDFB;
 }
-.enlace-wsp{
+
+.enlace-wsp {
   margin: 0 auto;
   margin-top: -8px;
 }
 
-.icono-wsp{
+.icono-wsp {
   font-size: 44px;
   color: #14990A;
+  margin-bottom: 400px;
 }
 
+.div-dulce-title {
+  position: relative;
+  margin-top: 20px;
+   margin-bottom: 45px;
+
+}
+
+.dulces-img {
+  display: block;
+  width: 173px;
+  margin: auto;
+}
+
+.dulces-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  pointer-events: none;
+ 
+}
+
+
+/* efecto fade */
+.fadeIn {
+  opacity: 0;
+  animation: fadeInAnim 2s ease forwards;
+}
+
+@keyframes fadeInAnim {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
 @media (min-width: 700px) {
-  .texto-principal{
+  .card-desktop {
+    background-color: #E1DEAE;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    margin: 0 auto;
+    width: 70%;
+    border-radius: 20px;
+    padding: 29px;
+    margin-bottom: 500px;
+  }
+
+  .texto-principal {
     margin-bottom: 200px;
     line-height: 2.3;
+    font-size: 18px;
   }
+
   .titulo-principal {
-    font-size: 100px;
+    font-size: 80px;
     color: #aba47d;
   }
 
+
   .icono-wsp {
-    transition: font-size 0.4s ease-in-out;
+    font-size: 44px;
+    transition: transform 0.3s ease, color 0.3s ease;
   }
+
   .icono-wsp:hover {
-    font-size: 47px;
+    transform: scale(1.4);
     color: #17b10c;
   }
 }

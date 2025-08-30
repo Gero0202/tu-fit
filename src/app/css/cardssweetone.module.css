@@ -1,0 +1,97 @@
+.div-general{
+    display: flex;
+    align-items: center;
+    background-color: #fffdd0;
+    height: 170px;
+    padding: 15px;
+    margin-bottom: 55px;
+
+}
+
+.img-left{
+    width: 120px;
+    height: 120px;
+    object-position: bottom;
+    object-fit: cover; 
+    border-radius: 20px;
+    margin-right: 10px; 
+    
+}
+
+.div-text-right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    flex: 1;
+    gap: 8px;
+    
+}
+
+.title-card{
+    margin-top: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #f29821;
+}
+
+.first-text{
+    color: #c5d439;
+    font-size: 11px;
+    width: 100%;
+    
+}
+
+.second-text{
+    color: #c5d439;
+    font-size: 11px;
+    font-weight: bold;
+    width: 100%;
+}
+
+.bottom-text{
+    background-color: #f29821;
+    color: #fffdd0;
+    padding: 3px;
+    font-size: 12px;
+    font-weight: bold;
+    width: 70%;
+    margin: 0 auto;
+    border-radius: 4px;
+}
+
+
+
+@media (min-width: 700px) {
+    .div-general {
+        margin: auto;
+        /* margin-top: 30px; */
+        width: 100%;
+        border-radius: 20px;
+        justify-content: center;
+        gap: 20px;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .div-general:hover {
+        transform: scale(1.05);
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    .bottom-text{
+        width: 40%;
+    }
+
+    .title-card{
+        font-size: 18px;
+    }
+
+    .first-text{
+        font-size: 15px;
+    }
+   
+/* 
+    .div-text-right{
+        flex: none;
+    } */
+}
