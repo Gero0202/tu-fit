@@ -1,0 +1,116 @@
+/*
+  verde pistacho: #c5d439
+  naranja: #f29821
+  gris color logo: #948e6b
+  crema: #fffdd0
+*/
+
+/* LOGO */
+
+.div-logo {
+  text-align: center;
+  margin-top: 27px;
+  position: relative;
+  margin-bottom: 60px;
+  overflow: hidden;
+  
+}
+
+.logo-principal {
+  width: 90px;
+  position: relative;
+  z-index: 1;
+  
+}
+
+.div-lazos {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: 0;
+  transform: translateY(-80%);
+}
+
+.lazoNaranja {
+  width: 260px;
+  margin-left: -95px;
+  max-width: 90vw; 
+
+}
+
+.lazoVerde {
+  width: 260px;
+  transform: rotate(180deg);
+  max-width: 90vw; 
+}
+
+/* titulo */
+
+.div-textos{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.titulo-principal {
+  color: #948e6b;
+  text-shadow:
+    1px 0 0 #FDFDFB,
+    -1px 0 0 #FDFDFB,
+    0 2px 0 #FDFDFB,
+    0 -1px 0 #FDFDFB;
+  font-size: 55px;
+  font-weight: bold;
+  text-align: center;
+
+}
+
+/* texto principal */
+
+.texto-principal{
+  font-size: 20px;
+  width: 80%;
+  text-align: center;
+  margin: 0 auto;
+  color: #FDFDFB;
+  margin-top: 67px;
+  margin-bottom: 149px;
+}
+
+.texto-secundario{
+  font-size: 20px;
+  width: 80%;
+  text-align: center;
+  margin: 0 auto;
+  color: #FDFDFB;
+}
+.enlace-wsp{
+  margin: 0 auto;
+  margin-top: -8px;
+}
+
+.icono-wsp{
+  font-size: 44px;
+  color: #14990A;
+}
+
+@media (min-width: 700px) {
+  .texto-principal{
+    margin-bottom: 200px;
+    line-height: 2.3;
+  }
+  .titulo-principal {
+    font-size: 100px;
+    color: #aba47d;
+  }
+
+  .icono-wsp {
+    transition: font-size 0.4s ease-in-out;
+  }
+  .icono-wsp:hover {
+    font-size: 47px;
+    color: #17b10c;
+  }
+}
