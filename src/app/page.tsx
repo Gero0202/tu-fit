@@ -6,6 +6,9 @@ import { Montserrat } from "next/font/google";
 import WindowSize from "./component/WindowSize";
 import { FaWhatsappSquare } from "react-icons/fa";
 import CardSweetOne from "./component/CardSweetOne";
+import CardSweetTwo from "./component/CardSweetTwo";
+import CardSweetThree from "./component/CardSweetThree";
+import CardSweetFour from "./component/CardSweetFour";
 
 const archivoBlack = Archivo_Black({
   subsets: ['latin'],
@@ -81,7 +84,7 @@ export default function Home() {
           bottomText="6U. (UN SOLO SABOR)"
         />
 
-         <CardSweetOne
+        <CardSweetTwo
           img="/pepas.png"
           title="PEPAS"
           text="100% INTEGRALES 
@@ -90,21 +93,33 @@ export default function Home() {
           bottomText="6U. (UN SOLO SABOR)"
         />
 
-         <CardSweetOne
+         <CardSweetThree
           img="/pepas.png"
           title="PEPAS"
           text="100% INTEGRALES 
         BAÑADAS EN CHOCOLATE SEMI AMARGO 
         (MEMBRILLO, BATATA O DULCE DE LECHE)"
+         texTwo={`
+          -Chocolate blanco
+          -Chocolate negro
+          -Integrales
+          `}
           bottomText="6U. (UN SOLO SABOR)"
         />
 
-         <CardSweetOne
+         
+
+         <CardSweetFour
           img="/pepas.png"
           title="PEPAS"
           text="100% INTEGRALES 
         BAÑADAS EN CHOCOLATE SEMI AMARGO 
         (MEMBRILLO, BATATA O DULCE DE LECHE)"
+         texTwo={`
+          -Chocolate blanco
+          -Chocolate negro
+          -Integrales
+          `}
           bottomText="6U. (UN SOLO SABOR)"
         />
 

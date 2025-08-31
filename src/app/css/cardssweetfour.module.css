@@ -1,0 +1,27 @@
+.div-general{
+    display: flex;
+    align-items: center;
+    background-color: #fffdd0;
+    height: 190px;
+    padding: 15px;
+    margin-bottom: 55px;
+    flex-direction: row-reverse;
+}
+
+@media (min-width: 700px) {
+    .div-general {
+        margin: auto;
+        /* margin-top: 30px; */
+        width: 100%;
+        border-radius: 20px;
+        height: 170px;
+        justify-content: center;
+        gap: 20px;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .div-general:hover {
+        transform: scale(1.05);
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    }
+}
