@@ -1,0 +1,65 @@
+.div-contenedor {
+    background-color: #fffdd0;
+    position: relative;
+    height: 700px;
+    
+    /* OPCION 2 */
+    /* width: 97%;
+    margin: auto;
+    border-radius: 20px; */
+}
+
+.pincelada-title {
+    position: absolute;
+    top: -44px;
+    left: 38%;
+    transform: scale(1.6, 0.7);
+    z-index: 0;
+    width: 25%;
+}
+
+.div-contenedor p {
+    margin: auto;
+    margin-top: 60px;
+    text-align: center;
+    margin-bottom: 9%;
+    position: relative;
+    z-index: 1;
+    color: #fff;
+    top: 19px;
+    font-size: 19px;
+    font-weight: bold;
+    width: 20%;
+
+}
+
+.div-general {
+    margin: auto;
+    max-width: 90%;
+    
+}
+
+
+.slide-inner {
+    margin: 0 5px;
+  box-sizing: border-box; /* para que el padding afecte el ancho total */
+}
+
+
+
+
+
+.carousel-img {
+    margin: 0;
+    width: 100%;
+    height: 320px; 
+    object-fit: cover;
+    border-radius: 10px; 
+    transition: transform 0.3s ease;
+}
+
+.carousel-img:hover {
+  filter: brightness(80%);
+  
+}
+
