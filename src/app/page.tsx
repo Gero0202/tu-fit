@@ -9,6 +9,7 @@ import CardSweetOne from "./component/CardSweetOne";
 import CardSweetTwo from "./component/CardSweetTwo";
 import CardSweetThree from "./component/CardSweetThree";
 import CardSweetFour from "./component/CardSweetFour";
+import Carrusel from "./component/Carrusel";
 
 const archivoBlack = Archivo_Black({
   subsets: ['latin'],
@@ -124,6 +125,7 @@ export default function Home() {
         />
 
       </div>
+      <Carrusel/>
     </>
   );
 }

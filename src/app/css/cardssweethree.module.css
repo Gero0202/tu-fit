@@ -68,7 +68,6 @@
 @media (min-width: 700px) {
     .div-general {
         margin: auto;
-        /* margin-top: 30px; */
         width: 100%;
         border-radius: 20px;
         height: 170px;
@@ -94,8 +93,5 @@
         font-size: 15px;
     }
    
-/* 
-    .div-text-right{
-        flex: none;
-    } */
+
 }
