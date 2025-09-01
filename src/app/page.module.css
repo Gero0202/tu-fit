@@ -150,16 +150,16 @@
     grid-template-columns: 1fr 1fr;
     gap: 40px;
     margin: 0 auto;
-    width: 70%;
-    border-radius: 20px;
-    padding: 29px;
+    width: 100%;
+    border-radius: 0px;
+    padding: 29px 135px 29px 135px;
     margin-bottom: 300px;
   }
 
   .texto-principal {
     margin-bottom: 200px;
     line-height: 2.3;
-    font-size: 18px;
+    font-size: 20px;
   }
 
   .titulo-principal {
