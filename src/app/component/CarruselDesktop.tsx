@@ -22,9 +22,9 @@ export default function CarruselDesktop() {
         slidesToScroll: 1,
         variableWidth: true,
         autoplay: true,
-        autoplaySpeed: 0, // velocidad base (0 hace que sea continuo)
-        speed: 6000, // cuanto más alto, más lento se mueve
-        cssEase: "linear", // transición lineal para que sea continuo y sin trabas
+        autoplaySpeed: 0, 
+        speed: 8000, 
+        cssEase: "linear", 
         pauseOnHover: false,
         arrows: false,
     };
