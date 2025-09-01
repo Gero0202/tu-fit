@@ -37,6 +37,7 @@
     font-size: 36px;
     background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
     color: aliceblue;
-    border-radius: 5px;
+    border-radius: 4px;
+    padding: 2px;
     margin-bottom: 20px;
 }

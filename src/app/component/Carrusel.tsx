@@ -10,13 +10,30 @@ const montserrat = Montserrat({
 })
 
 const images = [
-    "/pepas.png",
-    "/pepas.png",
-    "/pepas.png",
-    "/pepas.png",
-    "/pepas.png",
-    "/pepas.png",
-
+    "/salado1.png",
+    "/salado2.png",
+    "/salado3.png",
+    "/salado4.jpeg",
+    "/salado5.jpeg",
+    "/salado6.jpeg",
+    "/salado7.jpeg",
+    "/salado8.jpeg",
+    "/salado9.jpeg",
+    "/salado10.jpeg",
+    "/salado11.jpeg",
+    "/salado12.jpeg",
+    "/salado13.jpeg",
+    "/salado14.jpeg",
+    "/salado15.jpeg",
+    "/salado16.jpeg",
+    "/salado17.jpeg",
+    "/salado18.jpeg",
+    "/salado19.jpeg",
+    "/salado20.jpeg",
+    "/salado21.jpeg",
+    "/salado22.jpeg",
+    "/salado23.jpeg",
+    "/salado24.jpeg",
 ];
 
 export default function Carrusel() {

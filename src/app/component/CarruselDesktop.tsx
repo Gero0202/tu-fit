@@ -37,42 +37,122 @@ export default function CarruselDesktop() {
                 <Slider {...settings}>
                     <div className={styles["div-img"]} style={{ width: 250 }}>
                         <div className={styles["slide-inner"]}>
-                            <img src="/pepas.png" alt="img1" className={styles["carousel-img"]} />
+                            <img src="/salado1.png" alt="img1" className={styles["carousel-img"]} />
                         </div>
                     </div>
                     <div className={styles["div-img"]} style={{ width: 250 }}>
                         <div className={styles["slide-inner"]}>
-                            <img src="/pepas.png" alt="img1" className={styles["carousel-img"]} />
+                            <img src="/salado2.png" alt="img1" className={styles["carousel-img"]} />
                         </div>
                     </div>
                     <div className={styles["div-img"]} style={{ width: 250 }}>
                         <div className={styles["slide-inner"]}>
-                            <img src="/pepas.png" alt="img1" className={styles["carousel-img"]} />
+                            <img src="/salado3.png" alt="img1" className={styles["carousel-img"]} />
                         </div>
                     </div>
                     <div className={styles["div-img"]} style={{ width: 250 }}>
                         <div className={styles["slide-inner"]}>
-                            <img src="/pepas.png" alt="img1" className={styles["carousel-img"]} />
+                            <img src="/salado4.jpeg" alt="img1" className={styles["carousel-img"]} />
                         </div>
                     </div>
                     <div className={styles["div-img"]} style={{ width: 250 }}>
                         <div className={styles["slide-inner"]}>
-                            <img src="/pepas.png" alt="img1" className={styles["carousel-img"]} />
+                            <img src="/salado5.jpeg" alt="img1" className={styles["carousel-img"]} />
                         </div>
                     </div>
                     <div className={styles["div-img"]} style={{ width: 250 }}>
                         <div className={styles["slide-inner"]}>
-                            <img src="/pepas.png" alt="img1" className={styles["carousel-img"]} />
+                            <img src="/salado6.jpeg" alt="img1" className={styles["carousel-img"]} />
                         </div>
                     </div>
                     <div className={styles["div-img"]} style={{ width: 250 }}>
                         <div className={styles["slide-inner"]}>
-                            <img src="/pepas.png" alt="img1" className={styles["carousel-img"]} />
+                            <img src="/salado7.jpeg" alt="img1" className={styles["carousel-img"]} />
                         </div>
                     </div>
                     <div className={styles["div-img"]} style={{ width: 250 }}>
                         <div className={styles["slide-inner"]}>
-                            <img src="/pepas.png" alt="img1" className={styles["carousel-img"]} />
+                            <img src="/salado8.jpeg" alt="img1" className={styles["carousel-img"]} />
+                        </div>
+                    </div>
+                    <div className={styles["div-img"]} style={{ width: 250 }}>
+                        <div className={styles["slide-inner"]}>
+                            <img src="/salado9.jpeg" alt="img1" className={styles["carousel-img"]} />
+                        </div>
+                    </div>
+                    <div className={styles["div-img"]} style={{ width: 250 }}>
+                        <div className={styles["slide-inner"]}>
+                            <img src="/salado10.jpeg" alt="img1" className={styles["carousel-img"]} />
+                        </div>
+                    </div>
+                    <div className={styles["div-img"]} style={{ width: 250 }}>
+                        <div className={styles["slide-inner"]}>
+                            <img src="/salado11.jpeg" alt="img1" className={styles["carousel-img"]} />
+                        </div>
+                    </div>
+                    <div className={styles["div-img"]} style={{ width: 250 }}>
+                        <div className={styles["slide-inner"]}>
+                            <img src="/salado12.jpeg" alt="img1" className={styles["carousel-img"]} />
+                        </div>
+                    </div>
+                    <div className={styles["div-img"]} style={{ width: 250 }}>
+                        <div className={styles["slide-inner"]}>
+                            <img src="/salado13.jpeg" alt="img1" className={styles["carousel-img"]} />
+                        </div>
+                    </div>
+                    <div className={styles["div-img"]} style={{ width: 250 }}>
+                        <div className={styles["slide-inner"]}>
+                            <img src="/salado14.jpeg" alt="img1" className={styles["carousel-img"]} />
+                        </div>
+                    </div>
+                    <div className={styles["div-img"]} style={{ width: 250 }}>
+                        <div className={styles["slide-inner"]}>
+                            <img src="/salado15.jpeg" alt="img1" className={styles["carousel-img"]} />
+                        </div>
+                    </div>
+                    <div className={styles["div-img"]} style={{ width: 250 }}>
+                        <div className={styles["slide-inner"]}>
+                            <img src="/salado16.jpeg" alt="img1" className={styles["carousel-img"]} />
+                        </div>
+                    </div>
+                    <div className={styles["div-img"]} style={{ width: 250 }}>
+                        <div className={styles["slide-inner"]}>
+                            <img src="/salado17.jpeg" alt="img1" className={styles["carousel-img"]} />
+                        </div>
+                    </div>
+                    <div className={styles["div-img"]} style={{ width: 250 }}>
+                        <div className={styles["slide-inner"]}>
+                            <img src="/salado18.jpeg" alt="img1" className={styles["carousel-img"]} />
+                        </div>
+                    </div>
+                    <div className={styles["div-img"]} style={{ width: 250 }}>
+                        <div className={styles["slide-inner"]}>
+                            <img src="/salado19.jpeg" alt="img1" className={styles["carousel-img"]} />
+                        </div>
+                    </div>
+                    <div className={styles["div-img"]} style={{ width: 250 }}>
+                        <div className={styles["slide-inner"]}>
+                            <img src="/salado20.jpeg" alt="img1" className={styles["carousel-img"]} />
+                        </div>
+                    </div>
+                    <div className={styles["div-img"]} style={{ width: 250 }}>
+                        <div className={styles["slide-inner"]}>
+                            <img src="/salado21.jpeg" alt="img1" className={styles["carousel-img"]} />
+                        </div>
+                    </div>
+                    <div className={styles["div-img"]} style={{ width: 250 }}>
+                        <div className={styles["slide-inner"]}>
+                            <img src="/salado22.jpeg" alt="img1" className={styles["carousel-img"]} />
+                        </div>
+                    </div>
+                    <div className={styles["div-img"]} style={{ width: 250 }}>
+                        <div className={styles["slide-inner"]}>
+                            <img src="/salado23.jpeg" alt="img1" className={styles["carousel-img"]} />
+                        </div>
+                    </div>
+                    <div className={styles["div-img"]} style={{ width: 250 }}>
+                        <div className={styles["slide-inner"]}>
+                            <img src="/salado24.jpeg" alt="img1" className={styles["carousel-img"]} />
                         </div>
                     </div>
                 </Slider>
