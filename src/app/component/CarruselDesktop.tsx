@@ -7,8 +7,8 @@ import styles from "@/app/css/carruseldesktop.module.css"
 import { Montserrat } from "next/font/google"
 
 const montserrat = Montserrat({
-  subsets: ['latin'],
-  weight: 'variable'
+    subsets: ['latin'],
+    weight: 'variable'
 })
 
 export default function CarruselDesktop() {
@@ -22,11 +22,13 @@ export default function CarruselDesktop() {
         slidesToScroll: 1,
         variableWidth: true,
         autoplay: true,
-        autoplaySpeed: 1, 
-        speed: 10000, 
-        cssEase: "linear", 
+        autoplaySpeed: 0,
+        speed: 7000,
+        cssEase: "linear",
         pauseOnHover: false,
         arrows: false,
+       // cargar solo cuando aparece
+        touchMove: false,
     };
 
     return (

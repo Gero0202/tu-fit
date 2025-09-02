@@ -102,10 +102,14 @@
   margin-bottom: 400px;
 }
 
+/*dulce*/
+
+
+
 .div-dulce-title {
   position: relative;
-  margin-top: 20px;
-   margin-bottom: 45px;
+  margin-top: 12px;
+   margin-bottom: 20px;
 
 }
 
@@ -128,7 +132,12 @@
  
 }
 
-/*card ducles*/
+.container-sweet{
+    background-color: #E1DEAE;
+    margin-bottom: 20%;
+    margin-top: 10%;
+    
+}
 
 .card-desktop{
   background-color: #E1DEAE;
@@ -139,6 +148,7 @@
 .modal{
   display: flex;
   justify-content: center;
+  margin-bottom: 40px;
 }
 
 /* efecto fade */
@@ -165,7 +175,7 @@
     width: 100%;
     border-radius: 0px;
     padding: 29px 135px 29px 135px;
-    margin-bottom: 300px;
+    margin-bottom: 30px;
   }
 
   .texto-principal {

@@ -11,8 +11,6 @@ const montserrat = Montserrat({
 
 const images = [
     "/salado1.png",
-    "/salado2.png",
-    "/salado3.png",
     "/salado4.jpeg",
     "/salado5.jpeg",
     "/salado6.jpeg",

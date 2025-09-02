@@ -22,6 +22,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     text-align: center;
     flex: 1;
     gap: 8px;
@@ -45,9 +46,9 @@
 
 .second-text{
     color: #c5d439;
-    font-size: 11px;
+    font-size: 12px;
     font-weight: bold;
-    width: 100%;
+    width: 94%;
     white-space: pre-line;
 }
 

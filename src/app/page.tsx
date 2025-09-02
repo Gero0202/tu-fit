@@ -14,6 +14,7 @@ import CarruselDesktop from "./component/CarruselDesktop";
 import AboutUs from "./component/AboutUs";
 import AboutUsDesktop from "./component/AboutUsDesktop";
 import Modal from "./component/Modal";
+import CarruselInfinito from "./component/CarruselInf";
 
 const archivoBlack = Archivo_Black({
   subsets: ['latin'],
@@ -74,113 +75,113 @@ export default function Home() {
 
 
       {/* titulo dulce afuera del card.desktop */}
-      <div className={styles["div-dulce-title"]}>
+      {/* <div className={styles["div-dulce-title"]}>
         <img src="/pincelada_sin_fondo.svg" alt="titulo" className={styles["dulces-img"]} />
         <p className={`${styles["dulces-title"]} ${montserrat.className}`}>DULCE</p>
-      </div>
+      </div> */}
 
-
-      <div className={styles["card-desktop"]}>
-        {/* <div className={styles["div-dulce-title"]}>
+      <div className={styles["container-sweet"]}>
+        <div className={styles["div-dulce-title"]}>
           <img src="/pincelada_sin_fondo.svg" alt="titulo" className={styles["dulces-img"]} />
           <p className={`${styles["dulces-title"]} ${montserrat.className}`}>DULCE</p>
-        </div> */}
-        <CardSweetOne
-          img="/pepas.png"
-          title="PEPAS"
-          text="100% INTEGRALES"
-          bottomText="6U. (UN SOLO SABOR)"
-        />
+        </div>
+        <div className={styles["card-desktop"]}>
+          
+          <CardSweetOne
+            img="/pepas.png"
+            title="PEPAS"
+            text="100% INTEGRALES"
+            bottomText="6U. (UN SOLO SABOR)"
+          />
 
-        <CardSweetTwo
-          img="/dulce27.png"
-          title="CUADRADO DE COCO"
-          text="BASE DE MASA INTEGRAL, DULCE DE LECHE Y CRUMBLE DE COCO"
-          bottomText="1U."
-        />
+          <CardSweetTwo
+            img="/dulce27.png"
+            title="CUADRADO DE COCO"
+            text="BASE DE MASA INTEGRAL, DULCE DE LECHE Y CRUMBLE DE COCO"
+            bottomText="1U."
+          />
 
-        <CardSweetThree
-          img="/dulce5.jpeg"
-          title="ALFAPISTACHO"
-          text="ALFAJOR SIN GLUTEN - NO APTO PARA CELIACOS - MASA A BASE DE PISTACHOS Y HARINA DE FRUTOS SECOS
+          <CardSweetThree
+            img="/dulce5.jpeg"
+            title="ALFAPISTACHO"
+            text="ALFAJOR SIN GLUTEN - NO APTO PARA CELIACOS - MASA A BASE DE PISTACHOS Y HARINA DE FRUTOS SECOS
           , SIN AZUCAR. DOBLE RELLENO: CHOCOLATE Y PISTACHO Y PISTACHO CREAMY.
           COBERTURA CHOCOLATE 70% CACO Y PISTACHOS TOSTADOS"
-          bottomText="1U."
-        />
+            bottomText="1U."
+          />
 
-        <CardSweetTwo
-          img="/dulce4.png"
-          title="BUDINES"
-          text="100% INTEGRALES SIN CONSERVANTES"
-          bottomText="1U. 400grs"
-        />
+          <CardSweetTwo
+            img="/dulce4.png"
+            title="BUDINES"
+            text="100% INTEGRALES SIN CONSERVANTES"
+            bottomText="1U. 400grs"
+          />
 
-        <CardSweetOne
-          img="/dulce21.jpeg"
-          title="ALFAJOR DE MAICENA"
-          text=""
-          bottomText="6U."
-        />
+          <CardSweetOne
+            img="/dulce21.jpeg"
+            title="ALFAJOR DE MAICENA"
+            text=""
+            bottomText="6U."
+          />
 
-        <CardSweetTwo
-          img="/dulce26.png"
-          title="PASTAFROLA"
-          text=""
-          bottomText="PORCION GRANDE"
-        />
+          <CardSweetTwo
+            img="/dulce26.png"
+            title="PASTAFROLA"
+            text=""
+            bottomText="PORCION GRANDE"
+          />
 
-        <CardSweetOne
-          img="/dulce28.png"
-          title="MEDIALUNAS INTEGRALES"
-          text=""
-          bottomText="4U."
-        />
+          <CardSweetOne
+            img="/dulce28.png"
+            title="MEDIALUNAS INTEGRALES"
+            text=""
+            bottomText="4U."
+          />
 
-        <CardSweetTwo
-          img="/dulce29.png"
-          title="HAVANNET FIT SALUDABLES"
-          text="BASE DE HARINA INTEGRAL Y CHOCALET SEMI AMARGO SIN AZUCAR"
-          bottomText="4U."
-        />
+          <CardSweetTwo
+            img="/dulce29.png"
+            title="HAVANNET FIT SALUDABLES"
+            text="BASE DE HARINA INTEGRAL Y CHOCALET SEMI AMARGO SIN AZUCAR"
+            bottomText="4U."
+          />
 
-        <CardSweetOne
-          img="/dulce2.png"
-          title="ALFAJORES SALUDABLES"
-          text="SALVADO DE AVENA, HARINA DE ALMENDRAS, HUEVOS, GHEE, CACAO AMARGO, AZUCAR MASCABO , DULCE DE LECHE Y CACAO AMARGO"
-          bottomText="4U."
-        />
+          <CardSweetOne
+            img="/dulce2.png"
+            title="ALFAJORES SALUDABLES"
+            text="SALVADO DE AVENA, HARINA DE ALMENDRAS, HUEVOS, GHEE, CACAO AMARGO, AZUCAR MASCABO , DULCE DE LECHE Y CACAO AMARGO"
+            bottomText="4U."
+          />
 
-        <CardSweetTwo
-          img="/dulce31.png"
-          title="ALFAJORES MARPLATENSE"
-          text="TAMAÑO XL"
-          texTwo="HARINA INTEGRAL, HUEVO, AZUCAR MASCABO, GHEE, CACAO AMARGO Y DULCE DE LECHE"
-          bottomText="4U."
-        />
+          <CardSweetTwo
+            img="/dulce31.png"
+            title="ALFAJORES MARPLATENSE"
+            text="TAMAÑO XL"
+            texTwo="HARINA INTEGRAL, HUEVO, AZUCAR MASCABO, GHEE, CACAO AMARGO Y DULCE DE LECHE"
+            bottomText="4U."
+          />
 
-        <CardSweetOne
-          img="/dulce32.png"
-          title="ALFACOOKIE"
-          text="GALLETITA INTEGRAL DE VAINILLA Y CHIPS DE CHOCOLATE , RELLENO DE DULCE DE LECHE"
-          bottomText="4U."
-        />
+          <CardSweetOne
+            img="/dulce32.png"
+            title="ALFACOOKIE"
+            text="GALLETITA INTEGRAL DE VAINILLA Y CHIPS DE CHOCOLATE , RELLENO DE DULCE DE LECHE"
+            bottomText="4U."
+          />
 
-        <CardSweetTwo
-          img="/dulce14.jpeg"
-          title="WAFFLES PROTEICOS"
-          text="SIN HARINAS REFINADAS, SIN AZUCAR, SIN COLORANTES, NI CONSERVANTES"
-          bottomText="6U."
-        />
+          <CardSweetTwo
+            img="/dulce14.jpeg"
+            title="WAFFLES PROTEICOS"
+            text="SIN HARINAS REFINADAS, SIN AZUCAR, SIN COLORANTES, NI CONSERVANTES"
+            bottomText="6U."
+          />
 
-        <div className={styles["modal"]}>
-          <Modal />
         </div>
-
-
+        <div className={styles["modal"]}>
+            <Modal />
+          </div>
       </div>
-
-      {isDesktop ? <CarruselDesktop /> : <Carrusel />}
+      {isDesktop ? <CarruselInfinito/> : <Carrusel />}
       {isDesktop ? <AboutUsDesktop /> : <AboutUs />}
+      
     </>
   );
 }

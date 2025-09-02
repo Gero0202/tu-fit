@@ -1,14 +1,14 @@
 .open-btn {
-  background-color: #fffdd0; /* crema */
-  color: #f29821; /* verde pistacho para texto */
-  border: 2px solid #f29821; /* borde naranja */
-  border-radius: 30px; /* redondo */
-  padding: 10px 20px;
-  font-size: 1rem;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  box-shadow: 0 4px 8px rgba(148, 142, 107, 0.3); /* sombra gris suave */
-  margin-bottom: 20px;
+    background-color: #fffdd0;
+    color: #f29821;
+    border: 2px solid #f29821;
+    border-radius: 30px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(148, 142, 107, 0.3);
+    margin-bottom: 20px;
 }
 
 
@@ -82,7 +82,6 @@
 }
 
 
-/* Animaciones */
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -118,13 +117,11 @@
         top: 18px;
     }
 
-    .open-btn:hover{
-     
-  background-color: #c5d439; /* fondo verde pistacho */
-  color: #fffdd0; /* texto crema */
-  border-color: #f29821; /* mantiene borde naranja */
-  box-shadow: 0 4px 12px rgba(242, 152, 33, 0.5); /* sombra naranja un poco más fuerte */
-
+    .open-btn:hover {
+        background-color: #f29821;
+        color: #fffdd0;
+        border-color: #f29821;
+        box-shadow: 0 4px 12px rgba(242, 152, 33, 0.5);
     }
 
     .close-btn:hover {
@@ -155,7 +152,5 @@
         max-width: 49%;
         border-radius: 10px;
         transition: transform 0.3s ease;
-
     }
-
 }
