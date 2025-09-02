@@ -23,6 +23,7 @@
     flex-direction: column;
     justify-content: center;
     text-align: center;
+    align-items: center;
     flex: 1;
     gap: 13px;
     
@@ -38,7 +39,8 @@
 .first-text{
     color: #c5d439;
     font-size: 11px;
-    width: 100%;
+    width: 90%;
+    
     font-weight: 600;
     
 }
@@ -83,7 +85,7 @@
     }
 
     .bottom-text{
-        width: 40%;
+        width: 30%;
     }
 
     .title-card{

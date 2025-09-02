@@ -128,6 +128,18 @@
  
 }
 
+/*card ducles*/
+
+.card-desktop{
+  background-color: #E1DEAE;
+}
+
+/*modal*/
+
+.modal{
+  display: flex;
+  justify-content: center;
+}
 
 /* efecto fade */
 .fadeIn {

@@ -13,6 +13,7 @@ import Carrusel from "./component/Carrusel";
 import CarruselDesktop from "./component/CarruselDesktop";
 import AboutUs from "./component/AboutUs";
 import AboutUsDesktop from "./component/AboutUsDesktop";
+import Modal from "./component/Modal";
 
 const archivoBlack = Archivo_Black({
   subsets: ['latin'],
@@ -60,18 +61,19 @@ export default function Home() {
             {isDesktop ? firstTextDesktop : firstTextMobile}
           </p>
           <p className={`${styles["texto-secundario"]} ${styles.fadeIn} ${montserrat.className}`}>¡Hace tu pedido!</p>
-            <a
+          <a
             href="https://wa.me/542215766067"
             target="_blank"
             rel="noopener noreferrer"
             className={`${styles["enlace-wsp"]} ${styles.fadeIn}`}
-            >
+          >
             <FaWhatsappSquare className={`${styles["icono-wsp"]} ${styles.fadeIn}`} />
-            </a>
+          </a>
         </div>
       </div>
 
 
+      {/* titulo dulce afuera del card.desktop */}
       <div className={styles["div-dulce-title"]}>
         <img src="/pincelada_sin_fondo.svg" alt="titulo" className={styles["dulces-img"]} />
         <p className={`${styles["dulces-title"]} ${montserrat.className}`}>DULCE</p>
@@ -79,6 +81,10 @@ export default function Home() {
 
 
       <div className={styles["card-desktop"]}>
+        {/* <div className={styles["div-dulce-title"]}>
+          <img src="/pincelada_sin_fondo.svg" alt="titulo" className={styles["dulces-img"]} />
+          <p className={`${styles["dulces-title"]} ${montserrat.className}`}>DULCE</p>
+        </div> */}
         <CardSweetOne
           img="/pepas.png"
           title="PEPAS"
@@ -166,13 +172,15 @@ export default function Home() {
           bottomText="6U."
         />
 
-      <button>VER CARTA COMPLETA</button>
-       
+        <div className={styles["modal"]}>
+          <Modal />
+        </div>
+
 
       </div>
-     
-      { isDesktop ? <CarruselDesktop/> :  <Carrusel/> }
-      { isDesktop ? <AboutUsDesktop/> : <AboutUs/>}    
+
+      {isDesktop ? <CarruselDesktop /> : <Carrusel />}
+      {isDesktop ? <AboutUsDesktop /> : <AboutUs />}
     </>
   );
 }
