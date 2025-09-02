@@ -2,7 +2,7 @@
     display: flex;
     align-items: center;
     background-color: #fffdd0;
-    height: 190px;
+    height: 209px;
     padding: 15px;
     margin-bottom: 55px;
 
@@ -24,7 +24,7 @@
     justify-content: center;
     text-align: center;
     flex: 1;
-    gap: 5px;
+    gap: 13px;
     
 }
 
@@ -39,6 +39,7 @@
     color: #c5d439;
     font-size: 11px;
     width: 100%;
+    font-weight: 600;
     
 }
 

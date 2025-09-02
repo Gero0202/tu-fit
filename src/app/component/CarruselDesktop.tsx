@@ -22,8 +22,8 @@ export default function CarruselDesktop() {
         slidesToScroll: 1,
         variableWidth: true,
         autoplay: true,
-        autoplaySpeed: 0, 
-        speed: 8000, 
+        autoplaySpeed: 1, 
+        speed: 10000, 
         cssEase: "linear", 
         pauseOnHover: false,
         arrows: false,
@@ -35,21 +35,6 @@ export default function CarruselDesktop() {
                 <img src="/pincelada-salado.svg" alt="title" className={styles["pincelada-title"]} />
                 <p className={montserrat.className}>¡PEDINOS EL CATALOGO DE VIANDAS A NUESTRO WHATSAPP! </p>
                 <Slider {...settings}>
-                    <div className={styles["div-img"]} style={{ width: 250 }}>
-                        <div className={styles["slide-inner"]}>
-                            <img src="/salado1.png" alt="img1" className={styles["carousel-img"]} />
-                        </div>
-                    </div>
-                    <div className={styles["div-img"]} style={{ width: 250 }}>
-                        <div className={styles["slide-inner"]}>
-                            <img src="/salado2.png" alt="img1" className={styles["carousel-img"]} />
-                        </div>
-                    </div>
-                    <div className={styles["div-img"]} style={{ width: 250 }}>
-                        <div className={styles["slide-inner"]}>
-                            <img src="/salado3.png" alt="img1" className={styles["carousel-img"]} />
-                        </div>
-                    </div>
                     <div className={styles["div-img"]} style={{ width: 250 }}>
                         <div className={styles["slide-inner"]}>
                             <img src="/salado4.jpeg" alt="img1" className={styles["carousel-img"]} />
