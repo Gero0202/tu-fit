@@ -3,6 +3,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import styles from "@/app/css/carrusel.module.css";
 import { Montserrat } from "next/font/google"
+import { useMemo } from "react";
 
 const montserrat = Montserrat({
   subsets: ['latin'],
@@ -12,13 +13,11 @@ const montserrat = Montserrat({
 const images = [
     "/salado1.png",
     "/salado4.jpeg",
-    "/salado5.jpeg",
     "/salado6.jpeg",
     "/salado7.jpeg",
     "/salado8.jpeg",
     "/salado9.jpeg",
     "/salado10.jpeg",
-    "/salado11.jpeg",
     "/salado12.jpeg",
     "/salado13.jpeg",
     "/salado14.jpeg",
@@ -34,7 +33,21 @@ const images = [
     "/salado24.jpeg",
 ];
 
+
+
+function shuffleArray<T>(array: T[]): T[] {
+    const newArray = [...array];
+    for (let i = newArray.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [newArray[i], newArray[j]] = [newArray[j], newArray[i]];
+    }
+    return newArray;
+}
+
 export default function Carrusel() {
+
+    const shuffledImages = useMemo(() => shuffleArray(images), [])
+
     const settings = {
         infinite: true,
         dots: true,
@@ -61,7 +74,7 @@ export default function Carrusel() {
             <img src="/pincelada-salado.svg" alt="title" className={styles["pincelada-title"]} />
             <p className={montserrat.className}>¡PEDINOS EL CATALOGO DE VIANDAS A NUESTRO WHATSAPP! </p>
             <Slider {...settings}>
-                {images.map((src, index) => (
+                {shuffledImages.map((src, index) => (
                     <div key={index} className={styles["slide"]}>
                         <img src={src} alt={`img-${index}`} className={styles["slide-img"]} />
                     </div>

@@ -22,14 +22,14 @@ export default function AboutUsDesktop() {
 
                     <div className={styles["grid-container"]}>
                         <div className={styles["right"]}>
-                            <img src="/budin-sol.png" alt="" className={`${styles["class-img"]} ${styles["img-right"]}`} />
+                            <img src="/dulce8.jpeg" alt="" className={`${styles["class-img"]} ${styles["img-right"]}`} />
                         </div>
                         <div className={styles["left"]}>
-                            <img src="/pepas.png" alt="" className={styles["class-img"]} />
-                            <img src="/budin-sol.png" alt="" className={styles["class-img"]} />
+                            <img src="/dulce33.png" alt="" className={styles["class-img"]} />
+                            <img src="/salado23.jpeg" alt="" className={styles["class-img"]} />
                         </div>
                         <div className={styles["right"]}>
-                            <img src="/budin-sol.png" alt="" className={`${styles["class-img"]} ${styles["img-right"]}`} />
+                            <img src="/dulce7.jpeg" alt="" className={`${styles["class-img"]} ${styles["img-right"]}`} />
                         </div>
                         
                     </div>

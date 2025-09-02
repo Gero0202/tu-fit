@@ -16,24 +16,16 @@ export default function CarruselInfinito() {
                 <div className={styles["slider"]}>
                     <div className={styles["slide-track"]}>
                         <div className={styles["slide"]}>
-                            <img src="/salado1.png" alt="" />
-                        </div>
-
-                        
-
+                            <img src="/salado8.jpeg" alt="" />
+                        </div>                      
 
                         <div className={styles["slide"]}>
-                            <img src="/salado4.jpeg" alt="" />
+                            <img src="/salado9.jpeg" alt="" />
                         </div>
 
 
                         <div className={styles["slide"]}>
-                            <img src="/salado5.jpeg" alt="" />
-                        </div>
-
-
-                        <div className={styles["slide"]}>
-                            <img src="/salado6.jpeg" alt="" />
+                            <img src="/salado14.jpeg" alt="" />
                         </div>
 
 
@@ -41,48 +33,43 @@ export default function CarruselInfinito() {
                             <img src="/salado7.jpeg" alt="" />
                         </div>
 
+
                         <div className={styles["slide"]}>
-                            <img src="/salado8.jpeg" alt="" />
+                            <img src="/salado16.jpeg" alt="" />
                         </div>
 
                         <div className={styles["slide"]}>
-                            <img src="/salado9.jpeg" alt="" />
+                            <img src="/salado17.jpeg" alt="" />
                         </div>
 
                         <div className={styles["slide"]}>
-                            <img src="/salado10.jpeg" alt="" />
+                            <img src="/salado20.jpeg" alt="" />
                         </div>
 
                         <div className={styles["slide"]}>
-                            <img src="/salado11.jpeg" alt="" />
+                            <img src="/salado24.jpeg" alt="" />
                         </div>
 
                         <div className={styles["slide"]}>
-                            <img src="/salado12.jpeg" alt="" />
+                            <img src="/salado22.jpeg" alt="" />
                         </div>
+
+                        
 
                        
 
                          {/* REPEAT */}
                         <div className={styles["slide"]}>
-                            <img src="/salado1.png" alt="" />
-                        </div>
-
-                        
-
+                            <img src="/salado8.jpeg" alt="" />
+                        </div>                      
 
                         <div className={styles["slide"]}>
-                            <img src="/salado4.jpeg" alt="" />
+                            <img src="/salado9.jpeg" alt="" />
                         </div>
 
 
                         <div className={styles["slide"]}>
-                            <img src="/salado5.jpeg" alt="" />
-                        </div>
-
-
-                        <div className={styles["slide"]}>
-                            <img src="/salado6.jpeg" alt="" />
+                            <img src="/salado14.jpeg" alt="" />
                         </div>
 
 
@@ -90,26 +77,26 @@ export default function CarruselInfinito() {
                             <img src="/salado7.jpeg" alt="" />
                         </div>
 
+
                         <div className={styles["slide"]}>
-                            <img src="/salado8.jpeg" alt="" />
+                            <img src="/salado16.jpeg" alt="" />
                         </div>
 
                         <div className={styles["slide"]}>
-                            <img src="/salado9.jpeg" alt="" />
+                            <img src="/salado17.jpeg" alt="" />
                         </div>
 
                         <div className={styles["slide"]}>
-                            <img src="/salado10.jpeg" alt="" />
+                            <img src="/salado20.jpeg" alt="" />
                         </div>
 
                         <div className={styles["slide"]}>
-                            <img src="/salado11.jpeg" alt="" />
+                            <img src="/salado24.jpeg" alt="" />
                         </div>
 
                         <div className={styles["slide"]}>
-                            <img src="/salado12.jpeg" alt="" />
+                            <img src="/salado22.jpeg" alt="" />
                         </div>
-
                        
                     </div>
                 </div>

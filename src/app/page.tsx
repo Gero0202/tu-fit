@@ -15,6 +15,7 @@ import AboutUs from "./component/AboutUs";
 import AboutUsDesktop from "./component/AboutUsDesktop";
 import Modal from "./component/Modal";
 import CarruselInfinito from "./component/CarruselInf";
+import BoxMerienda from "./component/BoxMerienda";
 
 const archivoBlack = Archivo_Black({
   subsets: ['latin'],
@@ -181,7 +182,7 @@ export default function Home() {
       </div>
       {isDesktop ? <CarruselInfinito/> : <Carrusel />}
       {isDesktop ? <AboutUsDesktop /> : <AboutUs />}
-      
+      <BoxMerienda/>
     </>
   );
 }

@@ -37,9 +37,9 @@
 
 .slider .slide-track {
     display: flex;
-    animation: scroll 40s linear infinite;
-    -webkit-animation: scroll 40s linear infinite;
-    width: calc(250px * 20);
+    animation: scroll 50s linear infinite;
+    -webkit-animation: scroll 50s linear infinite;
+    width: calc(250px * 18);
 }
 
 .slider .slide {
@@ -67,7 +67,7 @@
         transform: translateX(0);
     }
     100% {
-        -webkit-transform: translateX(calc(-250px * 10));
+        -webkit-transform: translateX(calc(-250px * 9));
         transform: translateX(calc(-200px * 7));
     }
 }

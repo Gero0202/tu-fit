@@ -27,7 +27,6 @@ export default function CarruselDesktop() {
         cssEase: "linear",
         pauseOnHover: false,
         arrows: false,
-       // cargar solo cuando aparece
         touchMove: false,
     };
 
