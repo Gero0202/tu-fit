@@ -13,10 +13,11 @@ export default function AboutUs() {
                     La basa de Tufit es comprobar que se puede comer sano y rico sin tener que prohibirte de nada solo eligiendo una manera más sana y natural
                     Hace más de 5 años nosotros decidimos cambiar nuestros hábitos por eso creamos este emprendimiento familiar para poder llegar a sus casas con una propuesta sana, rica y práctica
                     Estamos para acompañarte</p>
-                <img src="/dulce8.jpeg" alt="" className={styles["class-img"]} />
+                <img src="/dulce8.jpeg" alt="budin" className={styles["class-img"]} />
                 <a href="https://www.instagram.com/tufit.laplata/">
                     <FaInstagram className={styles["instagram"]} />
                 </a>
+                <img src="/rama1.svg" alt="rama" className={styles["rama-uno"]}/>
             </div>
         </>
     )

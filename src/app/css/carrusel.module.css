@@ -100,3 +100,8 @@
     }
 }
 
+@media (max-width: 392) {
+    .div-container p {
+        margin-top: 10px;
+    }   
+}

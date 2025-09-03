@@ -50,7 +50,7 @@ export default function Carrusel() {
 
     const settings = {
         infinite: true,
-        dots: true,
+        dots: false,
         centerMode: true,       
         centerPadding: "100px",   
         slidesToShow: 1,   

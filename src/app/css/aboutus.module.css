@@ -1,4 +1,8 @@
 .div-general {
+    background-image: url("/background-aboutus.png");
+    background-repeat: repeat;
+    /* repite muchas veces */
+    background-size: 2% ;
     width: 100%;
     margin: auto;
     border-radius: 0px;
@@ -30,7 +34,7 @@
     border-radius: 30px;
     object-fit: cover;
     margin-bottom: 40px;
-
+    z-index: 1;
 }
 
 .instagram {
@@ -41,3 +45,13 @@
     padding: 2px;
     margin-bottom: 20px;
 }
+
+.rama-uno{
+    z-index: 0;
+    width: 47%;
+    margin-top: -77px;
+    margin-left: -410px;
+    position: absolute;
+    transform: rotate(46deg);
+}
+

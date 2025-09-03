@@ -11,7 +11,7 @@
 
 .text {
     margin: 0.3rem 0;
-    font-size: 1rem;
+    font-size: 0.9rem;
 }
 
 .link {
@@ -34,3 +34,4 @@
         gap: 60px;
     }
 }
+
