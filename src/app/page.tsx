@@ -115,15 +115,15 @@ export default function Home() {
           <CardSweetOne
             img="/dulce21.jpeg"
             title="ALFAJOR DE MAICENA"
-            text=""
+            text="SUAVES, LIVIANOS Y LLENOS DE SABOR"
             bottomText="6U."
           />
 
           <CardSweetTwo
             img="/dulce26.png"
             title="PASTAFROLA"
-            text=""
-            bottomText="PORCION GRANDE"
+            text="PASTAFROLA 100% INTEGRAL DE MEMBRILLO, BATATA O DULCE DE LECHE"
+            bottomText="PORCION MEDIANA"
           />
 
           <CardSweetThree
