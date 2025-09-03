@@ -63,9 +63,18 @@
     border-radius: 4px;
 }
 
-
-
 @media (min-width: 700px) {
+    .div-general{
+        margin-bottom: 40px;
+    }
+
+    .bottom-text{
+        width: 25%;
+    }
+}
+
+
+@media (min-width: 1000px) {
     .div-general {
         margin: auto;
         width: 100%;

@@ -104,7 +104,7 @@
     }
 }
 
-@media (min-width: 700px) {
+@media (min-width: 1300px) {
     .modal-content {
         max-width: 996px;
         border-radius: 10px;

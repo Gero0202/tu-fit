@@ -71,3 +71,39 @@
         transform: translateX(calc(-200px * 7));
     }
 }
+
+
+
+/* MEDIA QUERYS FUNCIONALES A MEJORAR */
+
+@media (min-width: 700px) and (max-width: 999px) {
+    .pincelada-title{
+        top: 25px;
+        transform: scale(2.6, 1.4);
+    }
+
+    .div-general p{
+        width: 40%;
+        font-size: 16px;
+    }
+
+    .slider{
+        margin-top: 20%;
+    }
+}
+
+@media (min-width: 1000px) and (max-width: 1300px) {
+    .pincelada-title{
+        top: 10px;
+        transform: scale(2.6, 0.9);
+    }
+
+    .div-general p{
+        width: 40%;
+        font-size: 16px;
+    }
+
+    .slider{
+        margin-top: 20%;
+    }
+}

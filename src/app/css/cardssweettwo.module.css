@@ -9,6 +9,12 @@
 }
 
 @media (min-width: 700px) {
+    .div-general{
+        margin-bottom: 40px;
+    }
+}
+
+@media (min-width: 1000px) {
     .div-general {
         margin: auto;
         width: 100%;
