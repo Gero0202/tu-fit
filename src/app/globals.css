@@ -25,5 +25,8 @@ body {
   body{
     background-position: top;
   }
+  html, body {
+  overflow-x: unset;
+}
 }
 

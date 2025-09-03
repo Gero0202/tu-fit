@@ -13,11 +13,11 @@
 .pincelada-title {
     position: absolute;
     top: -30px;
-    left: 13%;
-    transform: translateX(-50%);
-    transform: scaleX(1.2);
+    left: 19%;
+    /* transform: translateX(-50%); */
+    transform: scaleX(1.7);
     z-index: 0;
-    width: 75%;
+    width: 63%;
 }
 
 .div-container p {
