@@ -56,7 +56,7 @@ export default function Carrusel() {
         centerPadding: "100px",
         slidesToShow: 1,
         autoplay: true,
-        autoplaySpeed: 2000,
+        autoplaySpeed: 1000,
         speed: 500,
         responsive: [
             {
