@@ -7,6 +7,7 @@
 
 .div-height {
   height: 100vh;
+  
 }
 
 /* LOGO */
@@ -71,6 +72,10 @@
 
 }
 
+.textDesktop {
+  display: none;
+}
+
 /* texto principal */
 
 .texto-principal {
@@ -99,7 +104,7 @@
 .icono-wsp {
   font-size: 44px;
   color: #14990A;
-  margin-bottom: 600px;
+  /* margin-bottom: 600px; */
 }
 
 /*dulce*/
@@ -134,8 +139,8 @@
 
 .container-sweet{
     background-color: #E1DEAE;
-    margin-bottom: 30%;
-    margin-top: 10%;
+     margin-top: 60px;   /* o 5vh */
+  margin-bottom: 120px; /* ajustá al gusto */
     
 }
 
@@ -164,6 +169,14 @@
   }
 }
 
+@media (min-width: 700px) {
+  .textMobile {
+    display: none;
+  }
+  .textDesktop {
+    display: inline;
+  }
+}
 
 @media (min-width: 1600px) {
   .card-desktop {

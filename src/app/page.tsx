@@ -60,8 +60,18 @@ export default function Home() {
 
         <div className={`${styles["div-textos"]}`}>
           <p className={`${styles["titulo-principal"]} ${styles.fadeIn} ${archivoBlack.className}`}>TU-FIT</p>
-          <p className={`${styles["texto-principal"]} ${styles.fadeIn} ${montserrat.className}`}>
+          {/* <p className={`${styles["texto-principal"]} ${styles.fadeIn} ${montserrat.className}`}>
             {isDesktop ? firstTextDesktop : firstTextMobile}
+          </p> */}
+          <p className={`${styles["texto-principal"]} ${styles.fadeIn} ${montserrat.className}`}>
+            <span className={styles.textMobile}>
+              Productos saludables, integrales y caseros.
+            </span>
+            <span className={styles.textDesktop}>
+              PRODUCTOS SALUDABLES, INTEGRALES Y CASEROS
+              <br />
+              ¡VIANDAS DIARIAS, FRESCAS Y SANAS!
+            </span>
           </p>
           <p className={`${styles["texto-secundario"]} ${styles.fadeIn} ${montserrat.className}`}>¡Hace tu pedido!</p>
           <a
@@ -81,7 +91,7 @@ export default function Home() {
           <p className={`${styles["dulces-title"]} ${montserrat.className}`}>DULCE</p>
         </div>
         <div className={styles["card-desktop"]}>
-          
+
           <CardSweetOne
             img="/pepas.png"
             title="PEPAS"
@@ -172,14 +182,14 @@ export default function Home() {
 
         </div>
         <div className={styles["modal"]}>
-            <Modal />
-          </div>
+          <Modal />
+        </div>
       </div>
-      {isDesktop ? <CarruselInfinito/> : <Carrusel />}
+      {isDesktop ? <CarruselInfinito /> : <Carrusel />}
       {isDesltopAboutUs ? <AboutUsDesktop /> : <AboutUs />}
-      <BoxMerienda/>
+      <BoxMerienda />
 
-      <Footer/>
+      <Footer />
     </>
   );
 }
