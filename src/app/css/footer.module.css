@@ -1,0 +1,36 @@
+.footer {
+    background-color:  #312f27;
+    color: #ffffff;
+    text-align: center;
+    padding: 1rem 1rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    margin: auto;
+}
+
+.text {
+    margin: 0.3rem 0;
+    font-size: 1rem;
+}
+
+.link {
+    color: #79b7ff;
+    text-decoration: none;
+}
+
+.link:hover {
+    text-decoration: underline;
+}
+
+@media (min-width: 700px) {
+    /* .footer{
+        display: flex;
+    } */
+
+    .divText{
+        display: flex;
+        justify-content: center;
+        gap: 60px;
+    }
+}
