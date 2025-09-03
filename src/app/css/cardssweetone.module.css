@@ -1,4 +1,4 @@
-.div-general{
+.div-general {
     display: flex;
     align-items: center;
     background-color: #fffdd0;
@@ -8,17 +8,17 @@
 
 }
 
-.img-left{
+.img-left {
     width: 120px;
     height: 120px;
     object-position: bottom;
-    object-fit: cover; 
+    object-fit: cover;
     border-radius: 20px;
-    margin-right: 10px; 
-    
+    margin-right: 10px;
+
 }
 
-.div-text-right{
+.div-text-right {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -26,25 +26,25 @@
     text-align: center;
     flex: 1;
     gap: 8px;
-    
+
 }
 
-.title-card{
+.title-card {
     margin-top: 8px;
     font-size: 16px;
     font-weight: bold;
     color: #f29821;
 }
 
-.first-text{
+.first-text {
     color: #c5d439;
     font-size: 11px;
     width: 94%;
     font-weight: 600;
-    
+
 }
 
-.second-text{
+.second-text {
     color: #c5d439;
     font-size: 12px;
     font-weight: bold;
@@ -52,7 +52,7 @@
     white-space: pre-line;
 }
 
-.bottom-text{
+.bottom-text {
     background-color: #f29821;
     color: #fffdd0;
     padding: 3px;
@@ -64,17 +64,17 @@
 }
 
 @media (min-width: 700px) {
-    .div-general{
+    .div-general {
         margin-bottom: 40px;
     }
 
-    .bottom-text{
+    .bottom-text {
         width: 25%;
     }
 }
 
 
-@media (min-width: 1000px) {
+@media (min-width: 1600px) {
     .div-general {
         margin: auto;
         width: 100%;
@@ -89,16 +89,16 @@
         box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
     }
 
-    .bottom-text{
-        width: 30%;
+    .bottom-text {
+        width: 27%;
     }
 
-    .title-card{
-        font-size: 18px;
+    .title-card {
+        font-size: 17px;
     }
 
-    .first-text{
-        font-size: 15px;
+    .first-text {
+        font-size: 14px;
     }
-   
+
 }

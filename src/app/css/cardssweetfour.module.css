@@ -1,4 +1,4 @@
-.div-general{
+.div-general {
     display: flex;
     align-items: center;
     background-color: #fffdd0;
@@ -11,7 +11,6 @@
 @media (min-width: 700px) {
     .div-general {
         margin: auto;
-        /* margin-top: 30px; */
         width: 100%;
         border-radius: 20px;
         height: 170px;

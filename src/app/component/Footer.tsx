@@ -6,7 +6,7 @@ export default function Footer() {
             <footer className={styles.footer}>
                 <p className={styles.text}>VIANDAS DIARIAS, FRESCAS Y SANAS</p>
                 <div className={styles.divText}>
-                    <p className={styles.text}>Teléfono: +54 9 11 1234-5678</p>
+                    <p className={styles.text}>Teléfono: +54 2215766067</p>
                     <p className={styles.text}>
                         Seguinos en Instagram:{" "}
                         <a

@@ -1,56 +1,62 @@
-.div-general{
+.div-general {
     background-color: #fffdd0;
     position: relative;
     height: 650px;
     margin-bottom: 280px;
 }
 
-.pincelada-title {
-    position: absolute;
-    top: -58px;
-    left: 38%;
-    transform: scale(1.4, 0.7);
-    z-index: 0;
-    width: 24%;
+.div-dulce-title {
+    position: relative;
+    margin-top: 12px;
+    margin-bottom: 20px;
+
 }
 
-.div-general p{
+.pincelada-title {
+    display: block;
+    width: 143px;
     margin: auto;
-    text-align: center;
-    position: relative;
-    z-index: 1;
-    color: #fff;
-    top: 69px;
-    font-size: 19px;
-    font-weight: bold;
+    transform: scale(3.9, 1.7);
+}
+
+.div-general p {
     width: 20%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    text-align: center;
+    pointer-events: none;
 }
 
 
 .slider {
-    width: 95vw;
+    width: 98vw;
     height: auto;
     margin: auto;
     overflow: hidden;
-    margin-top: 10%;
+    margin-top: 5%;
 }
 
 .slider .slide-track {
     display: flex;
     animation: scroll 50s linear infinite;
     -webkit-animation: scroll 50s linear infinite;
-    width: calc(250px * 18);
+    width: calc(230px * 18);
 }
 
 .slider .slide {
-    width: 250px;
+    width: 230px;
     margin: 21px 13px;
     transition: transform 0.3s ease-in-out
 }
 
-.slider .slide:hover{
+.slider .slide:hover {
     transform: translateY(-16px);
-     filter: brightness(80%);
+    filter: brightness(80%);
 }
 
 .slider .slide img {
@@ -61,11 +67,12 @@
 }
 
 
-@keyframes scroll{
+@keyframes scroll {
     0% {
         -webkit-transform: translateX(0);
         transform: translateX(0);
     }
+
     100% {
         -webkit-transform: translateX(calc(-250px * 9));
         transform: translateX(calc(-200px * 7));
@@ -77,33 +84,27 @@
 /* MEDIA QUERYS FUNCIONALES A MEJORAR */
 
 @media (min-width: 700px) and (max-width: 999px) {
-    .pincelada-title{
+    .div-general {
+        height: 550px;
+    }
+
+    .pincelada-title {
         top: 25px;
         transform: scale(2.6, 1.4);
     }
 
-    .div-general p{
+    .div-general p {
         width: 40%;
         font-size: 16px;
     }
 
-    .slider{
-        margin-top: 20%;
+    .slider {
+        margin-top: 5%;
     }
 }
 
 @media (min-width: 1000px) and (max-width: 1300px) {
-    .pincelada-title{
-        top: 10px;
-        transform: scale(2.6, 0.9);
-    }
-
-    .div-general p{
-        width: 40%;
-        font-size: 16px;
-    }
-
-    .slider{
-        margin-top: 20%;
+    .div-general p {
+        width: 30%;
     }
 }

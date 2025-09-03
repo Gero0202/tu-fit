@@ -1,8 +1,7 @@
 .div-general {
     background-image: url("/background-aboutus.png");
     background-repeat: repeat;
-    /* repite muchas veces */
-    background-size: 10% ;
+    background-size: 10%;
     width: 100%;
     margin: auto;
     border-radius: 0px;
@@ -38,27 +37,21 @@
 
 .text {
     text-align: center;
-    line-height: 41px;
+    line-height: 45px;
     font-family: cursive;
     width: 80%;
-    font-size: 19px;
+    font-size: 17px;
 }
-
-
 
 .class-img {
     width: 250px;
     height: 200px;
     border-radius: 30px;
     object-fit: cover;
-
 }
-
-
 
 .img-right {
     height: 410px;
-
 }
 
 .instagram {
@@ -83,22 +76,3 @@
     grid-template-rows: 1fr 1fr;
     gap: 10px;
 }
-
-
-/* .rama-uno {
-    z-index: 0;
-    width: 9%;
-    margin-top: -30px;
-    margin-left: -1810px;
-    position: absolute;
-    transform: rotate(9deg);
-}
-
-.rama-dos {
-    z-index: 0;
-    width: 6%;
-    margin-top: 574px;
-    margin-left: 1695px;
-    position: absolute;
-    transform: rotate(257deg);
-} */

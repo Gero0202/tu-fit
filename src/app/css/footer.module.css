@@ -24,10 +24,6 @@
 }
 
 @media (min-width: 700px) {
-    /* .footer{
-        display: flex;
-    } */
-
     .divText{
         display: flex;
         justify-content: center;

@@ -35,8 +35,6 @@ export default function AboutUsDesktop() {
                     </div>
 
                 </div>
-                {/* <img src="/rama1.svg" alt="rama" className={styles["rama-uno"]}/>
-                <img src="/rama2.svg" alt="rama" className={styles["rama-dos"]}/> */}
             </div>
         </>
     )

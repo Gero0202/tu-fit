@@ -3,11 +3,6 @@
     position: relative;
     height: 650px;
     margin-bottom: 280px;
-
-    /* OPCION 2 */
-    /* width: 98%;
-    margin: auto;
-    border-radius: 20px; */
 }
 
 .pincelada-title {
@@ -43,12 +38,12 @@
 }
 
 .div-img {
-  transition: transform 0.3s ease-in-out;
-  margin-top: 70%;
+    transition: transform 0.3s ease-in-out;
+    margin-top: 70%;
 }
 
 .div-img:hover {
-  transform: translateY(-16px);
+    transform: translateY(-16px);
 }
 
 .carousel-img {

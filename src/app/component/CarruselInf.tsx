@@ -3,21 +3,23 @@ import styles from "@/app/css/carruselinf.module.css";
 import { Montserrat } from "next/font/google";
 
 const montserrat = Montserrat({
-  subsets: ['latin'],
-  weight: 'variable'
+    subsets: ['latin'],
+    weight: 'variable'
 })
 
 export default function CarruselInfinito() {
     return (
         <>
             <div className={styles["div-general"]}>
-                <img src="/pincelada-salado.svg" alt="title" className={styles["pincelada-title"]} />
-                <p className={montserrat.className}>¡PEDINOS EL CATALOGO DE VIANDAS A NUESTRO WHATSAPP! </p>
+                <div className={styles["div-dulce-title"]}>
+                    <img src="/pincelada-salado.svg" alt="title" className={styles["pincelada-title"]} />
+                    <p className={montserrat.className}>¡PEDINOS EL CATALOGO DE VIANDAS A NUESTRO WHATSAPP! </p>
+                </div>
                 <div className={styles["slider"]}>
                     <div className={styles["slide-track"]}>
                         <div className={styles["slide"]}>
                             <img src="/salado8.jpeg" alt="" />
-                        </div>                      
+                        </div>
 
                         <div className={styles["slide"]}>
                             <img src="/salado9.jpeg" alt="" />
@@ -54,14 +56,14 @@ export default function CarruselInfinito() {
                             <img src="/salado22.jpeg" alt="" />
                         </div>
 
-                        
 
-                       
 
-                         {/* REPEAT */}
+
+
+                        {/* REPEAT */}
                         <div className={styles["slide"]}>
                             <img src="/salado8.jpeg" alt="" />
-                        </div>                      
+                        </div>
 
                         <div className={styles["slide"]}>
                             <img src="/salado9.jpeg" alt="" />
@@ -97,7 +99,7 @@ export default function CarruselInfinito() {
                         <div className={styles["slide"]}>
                             <img src="/salado22.jpeg" alt="" />
                         </div>
-                       
+
                     </div>
                 </div>
             </div>

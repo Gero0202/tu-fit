@@ -10,7 +10,6 @@ import CardSweetTwo from "./component/CardSweetTwo";
 import CardSweetThree from "./component/CardSweetThree";
 import CardSweetFour from "./component/CardSweetFour";
 import Carrusel from "./component/Carrusel";
-import CarruselDesktop from "./component/CarruselDesktop";
 import AboutUs from "./component/AboutUs";
 import AboutUsDesktop from "./component/AboutUsDesktop";
 import Modal from "./component/Modal";
@@ -32,6 +31,7 @@ const montserrat = Montserrat({
 export default function Home() {
   const { width } = WindowSize()
   const isDesktop = (width ?? 0) >= 700
+  const isDesltopAboutUs = (width ?? 0) >= 1500
 
   const firstTextDesktop = (
     <>
@@ -74,13 +74,6 @@ export default function Home() {
           </a>
         </div>
       </div>
-
-
-      {/* titulo dulce afuera del card.desktop */}
-      {/* <div className={styles["div-dulce-title"]}>
-        <img src="/pincelada_sin_fondo.svg" alt="titulo" className={styles["dulces-img"]} />
-        <p className={`${styles["dulces-title"]} ${montserrat.className}`}>DULCE</p>
-      </div> */}
 
       <div className={styles["container-sweet"]}>
         <div className={styles["div-dulce-title"]}>
@@ -182,7 +175,7 @@ export default function Home() {
           </div>
       </div>
       {isDesktop ? <CarruselInfinito/> : <Carrusel />}
-      {isDesktop ? <AboutUsDesktop /> : <AboutUs />}
+      {isDesltopAboutUs ? <AboutUsDesktop /> : <AboutUs />}
       <BoxMerienda/>
 
       <Footer/>

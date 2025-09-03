@@ -1,4 +1,4 @@
-.div-general{
+.div-general {
     display: flex;
     align-items: center;
     background-color: #fffdd0;
@@ -9,17 +9,17 @@
 }
 
 @media (min-width: 700px) {
-    .div-general{
+    .div-general {
         margin-bottom: 40px;
     }
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 1600px) {
     .div-general {
         margin: auto;
         width: 100%;
         border-radius: 20px;
-        
+
         justify-content: center;
         gap: 20px;
         transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -29,4 +29,4 @@
         transform: scale(1.05);
         box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
     }
-}  
+}

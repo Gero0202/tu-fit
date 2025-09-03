@@ -16,7 +16,7 @@
     transform: scaleX(1.7);
     z-index: 0;
     width: 63%;
-   
+
 }
 
 .div-container p {
@@ -84,36 +84,15 @@
 @media (max-width: 392px) {
     .div-container p {
         margin-top: 10px;
-    }   
+    }
 }
 
-@media (min-width: 500px) and (max-width: 700px){
-    .pincelada-title{
+@media (min-width: 500px) and (max-width: 700px) {
+    .pincelada-title {
         transform: scaleX(1.4);
     }
 
-    .div-container p{
+    .div-container p {
         top: 38;
     }
 }
-
-/* @media (min-width: 700px) {
-    .div-container{
-        margin: 0 auto;
-        height: 600px;
-         margin-top: 1%;
-         margin-bottom: 40%;
-         width: 90%;
-    }
-    .pincelada-title {
-        top: -60px;
-        left: 50%;
-        transform: translateX(-50%);
-        width: 25%;
-    }
-    .div-container p{
-        margin-bottom: 190px;
-    }
-} */
-
-

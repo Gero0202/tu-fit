@@ -1,15 +1,6 @@
-/*
-  verde pistacho: #c5d439
-  naranja: #f29821
-  gris color logo: #948e6b
-  crema: #fffdd0
-*/
-
-
-
 .div-general {
+    min-height: 60vh;
     width: 100%;
-    height: 76vh;
     background-color: #fffef3;
     margin-top: 30%;
     margin-bottom: 30%;
@@ -23,7 +14,7 @@
 
 .primero {
     margin-top: 40px;
-    font-size: 19px;
+    font-size: 1.2em;
     color: #c5d439;
     font-weight: 500;
 
@@ -78,92 +69,99 @@
 .quinto {
     font-size: 17px;
     width: 77%;
-     color: #c5d439;
-    margin-bottom: 40px;
+    color: #c5d439;
+    margin-bottom: 30px;
     font-weight: 500;
 }
 
-.sexto{
+.sexto {
     font-size: 17px;
     width: 77%;
-     color: #c5d439;
-     font-weight: 500;
+    color: #c5d439;
+    font-weight: 500;
 }
 
-.corner-div{
+.corner-div {
     display: flex;
     justify-content: space-between;
     gap: 30px;
     position: relative;
-    top: -65px;
+    top: 1em;
 }
 
-.corner1{
-    width: 40%;
-    /* position: relative;
-    top: -70px;
-    right: 120px; */
+.corner1,
+.corner2 {
+    height: 150px;
+    width: 55vw;
 }
 
-.corner2{
-    width: 40%;
-    /* position: relative;
-    top: -255px;
-    left: 120px; */
+.corner2 {
     transform: rotateY(180deg);
 }
 
-@media (min-width: 700px) {
-    .div-general{
+@media (min-width: 500px) and (max-width: 1299px) {
+    .div-general {
+        width: 81%;
+        min-height: auto;
+        margin: auto;
+        margin-top: 28%;
+        margin-bottom: 29%;
+        border-radius: 20px;
+    }
+}
+
+
+@media (min-width: 1300px) {
+    .div-general {
         width: 40%;
         margin: auto;
         margin-top: 10%;
         margin-bottom: 13%;
         border-radius: 20px;
-        height: 68vh;
-    }
-    .corner-div{
-        top: -60px;
-        width: 100%;  
-        
+        /* height: 68vh; */
+        min-height: 68vh;
     }
 
-    .corner1{
-        width: 24%;
-       
-    } 
-    .corner2{
-        width: 24%;
+    .corner-div {
+        top: -0.2em;
+        width: 100%;
+
     }
 
-    .primero{
-        font-size: 23px;
+    .corner1,
+    .corner2 {
+        width: 10vw;
     }
 
-    .box-text{
-        font-size: 26px;
+    .primero {
+        font-size: 1.2em;
     }
 
-    .left-line{
-        width: 200px;
+    .box-text {
+        font-size: 1.3em;
     }
-    .right-line{
+
+    .left-line {
         width: 200px;
     }
 
-    .tercero{
-        font-size: 23px;
+    .right-line {
+        width: 200px;
     }
 
-    .cuarto{
-        font-size: 20px;
+    .tercero {
+        font-size: 1.2em;
     }
 
-    .quinto{
-        font-size: 20px;
+    .cuarto {
+        font-size: 1.2em;
     }
 
-    .sexto{
-        font-size: 22px;
+    .quinto {
+        font-size: 1.2em;
+    }
+
+    .sexto {
+        font-size: 1.3em;
     }
 }
