@@ -1,5 +1,6 @@
 import styles from "@/app/css/aboutusdesktop.module.css"
 import { FaInstagram } from "react-icons/fa6";
+import Image from "next/image";
 
 
 export default function AboutUsDesktop() {

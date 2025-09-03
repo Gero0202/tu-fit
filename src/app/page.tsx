@@ -126,10 +126,11 @@ export default function Home() {
             bottomText="PORCION GRANDE"
           />
 
-          <CardSweetOne
-            img="/dulce28.png"
-            title="MEDIALUNAS INTEGRALES"
-            text=""
+          <CardSweetThree
+            img="/dulce6.jpeg"
+            title="ALFAMARROC"
+            text="TAPAS DE HARINA INTEGRAL, RELLENO DE QUESO CREMA LIGHT, 
+            PASTA DE MANI SIN AZUCAR, ENDULZADO CON EDULCORANTE"
             bottomText="4U."
           />
 

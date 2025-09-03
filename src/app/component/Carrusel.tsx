@@ -4,10 +4,11 @@ import "slick-carousel/slick/slick-theme.css";
 import styles from "@/app/css/carrusel.module.css";
 import { Montserrat } from "next/font/google"
 import { useMemo } from "react";
+import Image from "next/image";
 
 const montserrat = Montserrat({
-  subsets: ['latin'],
-  weight: 'variable'
+    subsets: ['latin'],
+    weight: 'variable'
 })
 
 const images = [
@@ -51,15 +52,15 @@ export default function Carrusel() {
     const settings = {
         infinite: true,
         dots: false,
-        centerMode: true,       
-        centerPadding: "100px",   
-        slidesToShow: 1,   
+        centerMode: true,
+        centerPadding: "100px",
+        slidesToShow: 1,
         autoplay: true,
         autoplaySpeed: 2000,
         speed: 500,
         responsive: [
             {
-                breakpoint: 768, 
+                breakpoint: 768,
                 settings: {
                     slidesToShow: 3,
                     centerMode: true,
@@ -71,7 +72,13 @@ export default function Carrusel() {
 
     return (
         <div className={styles["div-container"]}>
-            <img src="/pincelada-salado.svg" alt="title" className={styles["pincelada-title"]} />
+            <Image
+                src="/pincelada-salado.svg"
+                alt="title"
+                className={styles["pincelada-title"]}
+                width={150} 
+                height={150} 
+            />
             <p className={montserrat.className}>¡PEDINOS EL CATALOGO DE VIANDAS A NUESTRO WHATSAPP! </p>
             <Slider {...settings}>
                 {shuffledImages.map((src, index) => (

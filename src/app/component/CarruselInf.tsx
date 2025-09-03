@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "@/app/css/carruselinf.module.css";
 import { Montserrat } from "next/font/google";
+import Image from "next/image";
 
 const montserrat = Montserrat({
     subsets: ['latin'],
@@ -18,42 +19,84 @@ export default function CarruselInfinito() {
                 <div className={styles["slider"]}>
                     <div className={styles["slide-track"]}>
                         <div className={styles["slide"]}>
-                            <img src="/salado8.jpeg" alt="" />
+                            <Image
+                                src="/salado8.jpeg"
+                                alt="vianda salada"
+                                width={230} 
+                                height={230} 
+                            />
                         </div>
 
                         <div className={styles["slide"]}>
-                            <img src="/salado9.jpeg" alt="" />
-                        </div>
-
-
-                        <div className={styles["slide"]}>
-                            <img src="/salado14.jpeg" alt="" />
-                        </div>
-
-
-                        <div className={styles["slide"]}>
-                            <img src="/salado7.jpeg" alt="" />
-                        </div>
-
-
-                        <div className={styles["slide"]}>
-                            <img src="/salado16.jpeg" alt="" />
+                            <Image
+                                src="/salado9.jpeg"
+                                alt="vianda salada"
+                                width={230}
+                                height={230}
+                            />
                         </div>
 
                         <div className={styles["slide"]}>
-                            <img src="/salado17.jpeg" alt="" />
+                            <Image
+                                src="/salado14.jpeg"
+                                alt="vianda salada"
+                                width={230}
+                                height={230}
+                            />
                         </div>
 
                         <div className={styles["slide"]}>
-                            <img src="/salado20.jpeg" alt="" />
+                            <Image
+                                src="/salado7.jpeg"
+                                alt="vianda salada"
+                                width={230}
+                                height={230}
+                            />
                         </div>
 
                         <div className={styles["slide"]}>
-                            <img src="/salado24.jpeg" alt="" />
+                            <Image
+                                src="/salado16.jpeg"
+                                alt="vianda salada"
+                                width={230}
+                                height={230}
+                            />
                         </div>
 
                         <div className={styles["slide"]}>
-                            <img src="/salado22.jpeg" alt="" />
+                            <Image
+                                src="/salado17.jpeg"
+                                alt="vianda salada"
+                                width={230}
+                                height={230}
+                            />
+                        </div>
+
+                        <div className={styles["slide"]}>
+                            <Image
+                                src="/salado20.jpeg"
+                                alt="vianda salada"
+                                width={230}
+                                height={230}
+                            />
+                        </div>
+
+                        <div className={styles["slide"]}>
+                            <Image
+                                src="/salado24.jpeg"
+                                alt="vianda salada"
+                                width={230}
+                                height={230}
+                            />
+                        </div>
+
+                        <div className={styles["slide"]}>
+                            <Image
+                                src="/salado22.jpeg"
+                                alt="vianda salada"
+                                width={230}
+                                height={230}
+                            />
                         </div>
 
 
@@ -62,42 +105,84 @@ export default function CarruselInfinito() {
 
                         {/* REPEAT */}
                         <div className={styles["slide"]}>
-                            <img src="/salado8.jpeg" alt="" />
+                            <Image
+                                src="/salado8.jpeg"
+                                alt="vianda salada"
+                                width={230} 
+                                height={230} 
+                            />
                         </div>
 
                         <div className={styles["slide"]}>
-                            <img src="/salado9.jpeg" alt="" />
-                        </div>
-
-
-                        <div className={styles["slide"]}>
-                            <img src="/salado14.jpeg" alt="" />
-                        </div>
-
-
-                        <div className={styles["slide"]}>
-                            <img src="/salado7.jpeg" alt="" />
-                        </div>
-
-
-                        <div className={styles["slide"]}>
-                            <img src="/salado16.jpeg" alt="" />
+                            <Image
+                                src="/salado9.jpeg"
+                                alt="vianda salada"
+                                width={230}
+                                height={230}
+                            />
                         </div>
 
                         <div className={styles["slide"]}>
-                            <img src="/salado17.jpeg" alt="" />
+                            <Image
+                                src="/salado14.jpeg"
+                                alt="vianda salada"
+                                width={230}
+                                height={230}
+                            />
                         </div>
 
                         <div className={styles["slide"]}>
-                            <img src="/salado20.jpeg" alt="" />
+                            <Image
+                                src="/salado7.jpeg"
+                                alt="vianda salada"
+                                width={230}
+                                height={230}
+                            />
                         </div>
 
                         <div className={styles["slide"]}>
-                            <img src="/salado24.jpeg" alt="" />
+                            <Image
+                                src="/salado16.jpeg"
+                                alt="vianda salada"
+                                width={230}
+                                height={230}
+                            />
                         </div>
 
                         <div className={styles["slide"]}>
-                            <img src="/salado22.jpeg" alt="" />
+                            <Image
+                                src="/salado17.jpeg"
+                                alt="vianda salada"
+                                width={230}
+                                height={230}
+                            />
+                        </div>
+
+                        <div className={styles["slide"]}>
+                            <Image
+                                src="/salado20.jpeg"
+                                alt="vianda salada"
+                                width={230}
+                                height={230}
+                            />
+                        </div>
+
+                        <div className={styles["slide"]}>
+                            <Image
+                                src="/salado24.jpeg"
+                                alt="vianda salada"
+                                width={230}
+                                height={230}
+                            />
+                        </div>
+
+                        <div className={styles["slide"]}>
+                            <Image
+                                src="/salado22.jpeg"
+                                alt="vianda salada"
+                                width={230}
+                                height={230}
+                            />
                         </div>
 
                     </div>
