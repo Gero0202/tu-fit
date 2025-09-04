@@ -182,7 +182,11 @@ export default function Home() {
 
         </div>
         <div className={styles["modal"]}>
-          <Modal />
+          <Modal 
+          title="CARTA"
+          img="/carta1.jpeg"
+          img2="/carta2.jpeg"
+          />
         </div>
       </div>
       {isDesktop ? <CarruselInfinito /> : <Carrusel />}

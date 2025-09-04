@@ -4,13 +4,20 @@ import { useState } from "react";
 import { IoMdClose } from "react-icons/io";
 import styles from "@/app/css/modal.module.css"
 import { Montserrat } from "next/font/google";
+import Image from "next/image";
 
 const montserrat = Montserrat({
   subsets: ['latin'],
   weight: 'variable'
 })
 
-export default function Modal() {
+interface ModalProps {
+    img: string
+    img2: string
+    title: string
+}
+
+export default function Modal(props: ModalProps) {
     const [isOpen, setIsOpen] = useState(false)
 
     return (
@@ -23,13 +30,13 @@ export default function Modal() {
                 {isOpen && (
                     <div className={styles["modal-overlay"]}>
                         <div className={styles["modal-content"]}>
-                            <h2 className={`${montserrat.style}`}>CARTA</h2>
+                            <h2 className={`${montserrat.style}`}>{props.title}</h2>
                             <button className={styles["close-btn"]} onClick={() => setIsOpen(false)}>
                                 <IoMdClose />
                             </button>
                             <div className={styles["images-container"]}>
-                                <img src="/carta1.jpeg" alt="Carta Dulce 1" />
-                                <img src="/carta2.jpeg" alt="Carta Dulce 2" />
+                                <img src={props.img} alt="Carta Dulce 1" />
+                                <img src={props.img2} alt="Carta Dulce 2" />
                             </div>
                         </div>
                     </div>

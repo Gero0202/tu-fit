@@ -2,6 +2,7 @@ import React from "react";
 import styles from "@/app/css/carruselinf.module.css";
 import { Montserrat } from "next/font/google";
 import Image from "next/image";
+import Modal from "./Modal";
 
 const montserrat = Montserrat({
     subsets: ['latin'],
@@ -187,6 +188,13 @@ export default function CarruselInfinito() {
 
                     </div>
                 </div>
+                <div className={styles["modal"]}>
+                <Modal
+                    title="CARTA"
+                    img="/carta3.jpeg"
+                    img2="/carta4.jpeg"
+                />
+            </div>
             </div>
         </>
     );

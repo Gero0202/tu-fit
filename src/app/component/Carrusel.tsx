@@ -5,6 +5,7 @@ import styles from "@/app/css/carrusel.module.css";
 import { Montserrat } from "next/font/google"
 import { useMemo } from "react";
 import Image from "next/image";
+import Modal from "./Modal";
 
 const montserrat = Montserrat({
     subsets: ['latin'],
@@ -56,7 +57,7 @@ export default function Carrusel() {
         centerPadding: "100px",
         slidesToShow: 1,
         autoplay: true,
-        autoplaySpeed: 1000,
+        autoplaySpeed: 1500,
         speed: 500,
         responsive: [
             {
@@ -76,8 +77,8 @@ export default function Carrusel() {
                 src="/pincelada-salado.svg"
                 alt="title"
                 className={styles["pincelada-title"]}
-                width={150} 
-                height={150} 
+                width={150}
+                height={150}
             />
             <p className={montserrat.className}>¡PEDINOS EL CATALOGO DE VIANDAS A NUESTRO WHATSAPP! </p>
             <Slider {...settings}>
@@ -87,6 +88,13 @@ export default function Carrusel() {
                     </div>
                 ))}
             </Slider>
+            <div className={styles["modal"]}>
+                <Modal
+                    title="CARTA"
+                    img="/carta3.jpeg"
+                    img2="/carta4.jpeg"
+                />
+            </div>
         </div>
     );
 }
