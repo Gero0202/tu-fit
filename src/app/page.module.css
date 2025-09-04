@@ -160,7 +160,7 @@
 .container-sweet {
   background-color: #E1DEAE;
   margin-top: 223px;
-  margin-bottom: 120px;
+  margin-bottom: 250px;
 
 }
 
@@ -231,7 +231,7 @@
 
   .icono-wsp:hover {
     transform: scale(1.4);
-    color: #17b10c;
+    color: #16a20c;
   }
 
   .bottom {
