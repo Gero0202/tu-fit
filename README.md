@@ -5,7 +5,7 @@ El proyecto fue creado con Next.js, priorizando un diseño moderno, responsive y
 
 ---
 
-###✨ Características
+### ✨ Características
 
 - Diseño responsive adaptado a desktop y mobile.
 - Interfaz visual limpia y atractiva con colores corporativos del emprendimiento.
@@ -24,7 +24,7 @@ El proyecto fue creado con Next.js, priorizando un diseño moderno, responsive y
 
 --- 
 
-###📬 Contacto
+### 📬 Contacto
 
 Proyecto freelance desarrollado por Geronimo Tortosa
 Si querés ver más proyectos, [Visita GitHub](https://github.com/Gero0202)
