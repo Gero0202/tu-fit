@@ -1,5 +1,5 @@
 .div-general {
-    min-height: 60vh;
+    min-height: 78vh;
     width: 100%;
     background-color: #fffef3;
     margin-top: 30%;
@@ -86,7 +86,7 @@
     justify-content: space-between;
     gap: 30px;
     position: relative;
-    top: 1em;
+    top: -2em;
 }
 
 .corner1,
@@ -123,14 +123,14 @@
     }
 
     .corner-div {
-        top: -0.2em;
-        width: 100%;
+        top: -0.7em;
+        width: 102%;
 
     }
 
     .corner1,
     .corner2 {
-        width: 10vw;
+        width: 9vw;
     }
 
     .primero {

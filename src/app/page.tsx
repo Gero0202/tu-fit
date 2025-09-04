@@ -16,6 +16,7 @@ import Modal from "./component/Modal";
 import CarruselInfinito from "./component/CarruselInf";
 import BoxMerienda from "./component/BoxMerienda";
 import Footer from "./component/Footer";
+import { useEffect, useState } from "react";
 
 const archivoBlack = Archivo_Black({
   subsets: ['latin'],
@@ -33,19 +34,6 @@ export default function Home() {
   const isDesktop = (width ?? 0) >= 700
   const isDesltopAboutUs = (width ?? 0) >= 1500
 
-  const firstTextDesktop = (
-    <>
-      PRODUCTOS SALUDABLES, INTEGRALES Y CASEROS
-      <br />
-      ¡VIANDAS DIARIAS, FRESCAS Y SANAS!
-    </>
-  )
-
-  const firstTextMobile = (
-    <>
-      Productos saludables, integrales y caseros.
-    </>
-  )
 
   return (
     <>
@@ -60,9 +48,6 @@ export default function Home() {
 
         <div className={`${styles["div-textos"]}`}>
           <p className={`${styles["titulo-principal"]} ${styles.fadeIn} ${archivoBlack.className}`}>TU-FIT</p>
-          {/* <p className={`${styles["texto-principal"]} ${styles.fadeIn} ${montserrat.className}`}>
-            {isDesktop ? firstTextDesktop : firstTextMobile}
-          </p> */}
           <p className={`${styles["texto-principal"]} ${styles.fadeIn} ${montserrat.className}`}>
             <span className={styles.textMobile}>
               Productos saludables, integrales y caseros.
@@ -182,10 +167,10 @@ export default function Home() {
 
         </div>
         <div className={styles["modal"]}>
-          <Modal 
-          title="CARTA"
-          img="/carta1.jpeg"
-          img2="/carta2.jpeg"
+          <Modal
+            title="CARTA"
+            img="/carta1.jpeg"
+            img2="/carta2.jpeg"
           />
         </div>
       </div>

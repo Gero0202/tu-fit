@@ -7,7 +7,7 @@
 
 .div-height {
   height: 100svh;
-  
+
 }
 
 /* LOGO */
@@ -114,7 +114,7 @@
 .div-dulce-title {
   position: relative;
   margin-top: 12px;
-   margin-bottom: 20px;
+  margin-bottom: 20px;
 
 }
 
@@ -134,23 +134,23 @@
   font-weight: bold;
   text-align: center;
   pointer-events: none;
- 
+
 }
 
-.container-sweet{
-    background-color: #E1DEAE;
-     margin-top: 60px;   /* o 5vh */
-  margin-bottom: 120px; /* ajustá al gusto */
-    
+.container-sweet {
+  background-color: #E1DEAE;
+  margin-top: 223px;
+  margin-bottom: 120px;
+
 }
 
-.card-desktop{
+.card-desktop {
   background-color: #E1DEAE;
 }
 
 /*modal*/
 
-.modal{
+.modal {
   display: flex;
   justify-content: center;
   margin-bottom: 40px;
@@ -173,6 +173,7 @@
   .textMobile {
     display: none;
   }
+
   .textDesktop {
     display: inline;
   }
@@ -187,7 +188,7 @@
     margin: 0 auto;
     width: 100%;
     border-radius: 0px;
-    padding: 2px   59px ;
+    padding: 2px 59px;
     margin-bottom: 30px;
   }
 
