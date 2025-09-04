@@ -96,15 +96,35 @@
   color: #FDFDFB;
 }
 
-.enlace-wsp {
+/* .enlace-wsp {
   margin: 0 auto;
   margin-top: -1px;
+} */
+
+.enlace-wsp {
+    z-index: 999;
+    transition: all 0.5s ease-in-out;
 }
+
+.middle {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
+.bottom {
+    position: fixed;
+    bottom: 30px;
+    right: 20px;
+}
+
+
+
 
 .icono-wsp {
   font-size: 44px;
-  color: #14990A;
-  /* margin-bottom: 600px; */
+  color: #19ac0f;
 }
 
 /*dulce*/
@@ -205,7 +225,7 @@
 
 
   .icono-wsp {
-    font-size: 44px;
+    font-size: 50px;
     transition: transform 0.3s ease, color 0.3s ease;
   }
 
@@ -213,4 +233,10 @@
     transform: scale(1.4);
     color: #17b10c;
   }
+
+  .bottom {
+    
+    bottom: 30px;
+    right: 40px;
+}
 }
