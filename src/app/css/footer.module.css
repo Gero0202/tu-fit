@@ -1,5 +1,5 @@
 .footer {
-    background-color:  #312f27;
+    background-color:  #504d40;
     color: #ffffff;
     text-align: center;
     padding: 0.8rem 1rem;
@@ -8,14 +8,20 @@
     width: 100%;
     margin: auto;
 }
+.title{
+    margin:  0;
+    font-size: 0.9rem;
+    text-align: center;
+}
 
 .text {
     margin: 0.3rem 0;
     font-size: 0.9rem;
+ 
 }
 
 .link {
-    color: #79b7ff;
+    color: #f29821;
     text-decoration: none;
 }
 
@@ -24,7 +30,14 @@
 }
 
 @media (min-width: 700px) {
+    .title{
+        font-size: 1em;
+    }
+    .text{
+        text-align: center;
+    }
     .divText{
+        margin-left: 50px;
         display: flex;
         justify-content: center;
         gap: 60px;

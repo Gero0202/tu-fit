@@ -4,7 +4,7 @@ export default function Footer() {
     return (
         <>
             <footer className={styles.footer}>
-                <p className={styles.text}>TU-FIT</p>
+                <p className={styles.title}>TU-FIT</p>
                 <div className={styles.divText}>
                     <p className={styles.text}>Teléfono: +54 2215766067</p>
                     <p className={styles.text}>
