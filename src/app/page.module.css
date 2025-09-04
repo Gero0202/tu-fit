@@ -160,7 +160,7 @@
 .container-sweet {
   background-color: #E1DEAE;
   margin-top: 223px;
-  margin-bottom: 250px;
+  margin-bottom: 40px;
 
 }
 
@@ -200,6 +200,9 @@
 }
 
 @media (min-width: 1600px) {
+  .container-sweet{
+    margin-bottom: 250px;
+  }
   .card-desktop {
     background-color: #E1DEAE;
     display: grid;

@@ -1,5 +1,4 @@
 .div-general {
-    min-height: 83vh;
     width: 100%;
     background-color: #fffef3;
     margin-top: 30%;
@@ -86,7 +85,7 @@
     justify-content: space-between;
     gap: 30px;
     position: relative;
-    top: -2em;
+    top: 0em;
 }
 
 .corner1,
