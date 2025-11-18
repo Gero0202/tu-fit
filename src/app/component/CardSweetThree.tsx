@@ -1,6 +1,7 @@
 import styles from "@/app/css/cardssweethree.module.css"
 import { Montserrat } from "next/font/google"
 import Image from "next/image"
+import { motion } from "framer-motion"
 
 const montserrat = Montserrat({
   subsets: ['latin'],
@@ -18,7 +19,13 @@ interface CardProp {
 export default function CardSweetThree(props: CardProp) {
     return (
         <>
-            <div className={styles["div-general"]}>
+            <motion.div
+                className={styles["div-general"]}
+                initial={{ opacity: 0, y: 10 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, ease: "easeOut" }}
+                viewport={{ once: false, amount: 0.2 }}
+            >
                 <Image
                     src={props.img}
                     alt={props.title}
@@ -32,7 +39,7 @@ export default function CardSweetThree(props: CardProp) {
                     <p className={`${styles["second-text"]} ${montserrat.className}`}>{props.texTwo}</p>
                     <p className={`${styles["bottom-text"]} ${montserrat.className}`}>{props.bottomText}</p>
                 </div>
-            </div>
+            </motion.div>
         </>
     )
 }

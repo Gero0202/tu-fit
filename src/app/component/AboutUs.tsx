@@ -1,11 +1,19 @@
 import styles from "@/app/css/aboutus.module.css"
 import { FaInstagram } from "react-icons/fa6";
 import Image from "next/image";
+import { motion } from "framer-motion"
+
 
 export default function AboutUs() {
     return (
         <>
-            <div className={styles["div-general"]}>
+            <motion.div
+                className={styles["div-general"]} 
+                initial={{ opacity: 0, y: 10 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, ease: "easeOut" }}
+                viewport={{ once: false, amount: 0.2 }}
+            >
                 <p className={`${styles["title"]} `}>NUESTRA HISTORIA</p>
                 <p className={`${styles["text"]} `}>Tufit desembarca en el año 2020 con el fin de invitarte a modificar tus hábitos para poder lograr una alimentación equilibrada con el
                     Compromiso nuestro de elegir productos de calidad y nutritivos para tu cuerpo.
@@ -24,7 +32,7 @@ export default function AboutUs() {
                     <FaInstagram className={styles["instagram"]} />
                 </a>
                 <img src="/rama1.svg" alt="rama" className={styles["rama-uno"]} />
-            </div>
+            </motion.div>
         </>
     )
 }

@@ -6,6 +6,7 @@ import { Montserrat } from "next/font/google"
 import { useMemo } from "react";
 import Image from "next/image";
 import Modal from "./Modal";
+import { motion } from "framer-motion"
 
 const montserrat = Montserrat({
     subsets: ['latin'],
@@ -73,6 +74,13 @@ export default function Carrusel() {
 
     return (
         <div className={styles["div-container"]}>
+            <motion.div
+           
+                initial={{ opacity: 0, y: 10 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, ease: "easeOut" }}
+                viewport={{ once: false, amount: 0.2 }}
+            >
             <Image
                 src="/pincelada-salado.svg"
                 alt="title"
@@ -81,6 +89,7 @@ export default function Carrusel() {
                 height={150}
             />
             <p className={montserrat.className}>¡PEDINOS EL CATALOGO DE VIANDAS A NUESTRO WHATSAPP! </p>
+            </motion.div>
             <Slider {...settings}>
                 {shuffledImages.map((src, index) => (
                     <div key={index} className={styles["slide"]}>
@@ -88,13 +97,19 @@ export default function Carrusel() {
                     </div>
                 ))}
             </Slider>
-            <div className={styles["modal"]}>
+            <motion.div
+                className={styles["modal"]}
+                initial={{ opacity: 0, y: 10 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, ease: "easeOut" }}
+                viewport={{ once: false, amount: 0.2 }}
+            >
                 <Modal
                     title="CARTA"
                     img="/carta3.jpeg"
                     img2="/carta4.jpeg"
                 />
-            </div>
+            </motion.div>
         </div>
     );
 }

@@ -4,11 +4,9 @@ import styles from "./page.module.css";
 import { Archivo_Black } from 'next/font/google';
 import { Montserrat } from "next/font/google";
 import WindowSize from "./component/WindowSize";
-import { FaWhatsappSquare } from "react-icons/fa";
 import CardSweetOne from "./component/CardSweetOne";
 import CardSweetTwo from "./component/CardSweetTwo";
 import CardSweetThree from "./component/CardSweetThree";
-import CardSweetFour from "./component/CardSweetFour";
 import Carrusel from "./component/Carrusel";
 import AboutUs from "./component/AboutUs";
 import AboutUsDesktop from "./component/AboutUsDesktop";
@@ -16,7 +14,7 @@ import Modal from "./component/Modal";
 import CarruselInfinito from "./component/CarruselInf";
 import BoxMerienda from "./component/BoxMerienda";
 import Footer from "./component/Footer";
-import { useEffect, useRef, useState } from "react";
+import { Landing } from "./component/Landing";
 
 const archivoBlack = Archivo_Black({
   subsets: ['latin'],
@@ -34,82 +32,11 @@ export default function Home() {
   const isDesktop = (width ?? 0) >= 700
   const isDesltopAboutUs = (width ?? 0) >= 1500
 
-  const buttonRef = useRef(null);
-  const [showFloating, setShowFloating] = useState(false);
-
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          setShowFloating(!entry.isIntersecting);
-        });
-      },
-      { threshold: 0.1 }
-    );
-
-    if (buttonRef.current) {
-      observer.observe(buttonRef.current);
-    }
-
-    return () => {
-      if (buttonRef.current) observer.unobserve(buttonRef.current);
-    };
-  }, []);
 
   return (
     <>
-      <div className={styles["div-height"]}>
-        <div className={`${styles["div-logo"]} ${styles.fadeIn}`}>
-          <img src="/tufit-logo.png" alt="Logo" className={styles["logo-principal"]} />
-          <div className={styles["div-lazos"]}>
-            <img src="/pinzeladapistacho.svg" alt="Pinzelada" className={styles["lazoVerde"]} />
-            <img src="/pinzeladanaranja.svg" alt="Pinzelada" className={styles["lazoNaranja"]} />
-          </div>
-        </div>
+      <Landing />
 
-        <div className={`${styles["div-textos"]}`}>
-          <p className={`${styles["titulo-principal"]} ${styles.fadeIn} ${archivoBlack.className}`}>TU-FIT</p>
-          <p className={`${styles["texto-principal"]} ${styles.fadeIn} ${montserrat.className}`}>
-            <span className={styles.textMobile}>
-              Productos saludables, integrales y caseros.
-            </span>
-            <span className={styles.textDesktop}>
-              PRODUCTOS SALUDABLES, INTEGRALES Y CASEROS
-              <br />
-              ¡VIANDAS DIARIAS, FRESCAS Y SANAS!
-            </span>
-          </p>
-          <p className={`${styles["texto-secundario"]} ${styles.fadeIn} ${montserrat.className}`}>¡Hace tu pedido!</p>
-          {/* <a
-            href="https://wa.me/542215766067"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={`${styles["enlace-wsp"]} ${styles.fadeIn}`}
-          >
-            <FaWhatsappSquare className={`${styles["icono-wsp"]} ${styles.fadeIn}`} />
-          </a> */}
-          <a
-            ref={buttonRef}
-            href="https://wa.me/542215766067"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={`${styles["enlace-wsp"]} ${styles["middle"]}`}
-          >
-            <FaWhatsappSquare className={styles["icono-wsp"]} />
-          </a>
-
-          {showFloating && (
-            <a
-              href="https://wa.me/542215766067"
-              target="_blank"
-              rel="noopener noreferrer"
-              className={`${styles["enlace-wsp"]} ${styles["bottom"]}`}
-            >
-              <FaWhatsappSquare className={styles["icono-wsp"]} />
-            </a>
-          )}
-        </div>
-      </div>
 
       <div className={styles["container-sweet"]}>
         <div className={styles["div-dulce-title"]}>

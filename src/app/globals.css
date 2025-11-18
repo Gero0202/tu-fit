@@ -4,6 +4,12 @@
   margin: 0;
 }
 
+/* OCULTA BOTON NEXT */
+nextjs-portal {
+  display: none !important;
+}
+
+
 html, body {
   overflow-x: hidden;
 }
@@ -20,7 +26,7 @@ body {
   background-repeat: no-repeat; */
   display: flex;
   flex-direction: column;
- 
+  background-color: #E1DEAE;
 }
 
 

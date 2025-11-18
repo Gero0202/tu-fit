@@ -5,128 +5,6 @@
   crema: #fffdd0
 */
 
-.div-height {
-  height: 100svh;
-
-}
-
-/* LOGO */
-
-.div-logo {
-  text-align: center;
-  margin-top: 27px;
-  position: relative;
-  margin-bottom: 60px;
-  overflow: hidden;
-
-}
-
-.logo-principal {
-  width: 90px;
-  position: relative;
-  z-index: 1;
-
-}
-
-.div-lazos {
-  display: flex;
-  justify-content: center;
-  position: absolute;
-  left: 0;
-  right: 0;
-  z-index: 0;
-  transform: translateY(-80%);
-}
-
-.lazoNaranja {
-  width: 260px;
-  margin-left: -95px;
-  max-width: 90vw;
-
-}
-
-.lazoVerde {
-  width: 260px;
-  transform: rotate(180deg);
-  max-width: 90vw;
-}
-
-/* titulo */
-
-.div-textos {
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
-}
-
-.titulo-principal {
-  color: #948e6b;
-  text-shadow:
-    1px 0 0 #FDFDFB,
-    -1px 0 0 #FDFDFB,
-    0 2px 0 #FDFDFB,
-    0 -1px 0 #FDFDFB;
-  font-size: 55px;
-  font-weight: bold;
-  text-align: center;
-
-}
-
-.textDesktop {
-  display: none;
-}
-
-/* texto principal */
-
-.texto-principal {
-  font-size: 20px;
-  width: 80%;
-  text-align: center;
-  margin: 0 auto;
-  color: #FDFDFB;
-  margin-top: 67px;
-  margin-bottom: 109px;
-}
-
-.texto-secundario {
-  font-size: 20px;
-  width: 80%;
-  text-align: center;
-  margin: 0 auto;
-  color: #FDFDFB;
-}
-
-/* .enlace-wsp {
-  margin: 0 auto;
-  margin-top: -1px;
-} */
-
-.enlace-wsp {
-    z-index: 999;
-    transition: all 0.5s ease-in-out;
-}
-
-.middle {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    margin: auto;
-}
-
-.bottom {
-    position: fixed;
-    bottom: 30px;
-    right: 20px;
-}
-
-
-
-
-.icono-wsp {
-  font-size: 44px;
-  color: #1dc312;
-}
-
 /*dulce*/
 
 
@@ -160,7 +38,7 @@
 .container-sweet {
   background-color: #E1DEAE;
   margin-top: 223px;
-  margin-bottom: 40px;
+  /* margin-bottom: 40px; */
 
 }
 
@@ -189,15 +67,6 @@
   }
 }
 
-@media (min-width: 700px) {
-  .textMobile {
-    display: none;
-  }
-
-  .textDesktop {
-    display: inline;
-  }
-}
 
 @media (min-width: 1600px) {
   .container-sweet{
@@ -214,32 +83,4 @@
     padding: 2px 59px;
     margin-bottom: 30px;
   }
-
-  .texto-principal {
-    margin-bottom: 200px;
-    line-height: 2.3;
-    font-size: 20px;
-  }
-
-  .titulo-principal {
-    font-size: 80px;
-    color: #aba47d;
-  }
-
-
-  .icono-wsp {
-    font-size: 50px;
-    transition: transform 0.3s ease, color 0.3s ease;
-  }
-
-  .icono-wsp:hover {
-    transform: scale(1.4);
-    color: #16a20c;
-  }
-
-  .bottom {
-    
-    bottom: 30px;
-    right: 40px;
-}
 }

@@ -11,9 +11,9 @@
 
 .pincelada-title {
     position: absolute;
-    top: -20px;
+    top: -16px;
     left: 19%;
-    transform: scaleX(2);
+    transform: scaleX(2) scaleY(1.4);
     z-index: 0;
     width: 63%;
 

@@ -1,12 +1,19 @@
 import styles from "@/app/css/aboutusdesktop.module.css"
 import { FaInstagram } from "react-icons/fa6";
-import Image from "next/image";
+import { motion } from "framer-motion"
+
 
 
 export default function AboutUsDesktop() {
     return (
         <>
-            <div className={styles["div-general"]}>
+            <motion.div
+                className={styles["div-general"]} 
+                initial={{ opacity: 0, y: 10 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, ease: "easeOut" }}
+                viewport={{ once: false, amount: 0.2 }}
+            >
                 <p className={`${styles["title"]} `}>NUESTRA HISTORIA</p>
                 <div className={styles["div-contenido"]}>
                     <div className={styles["div-text"]}>
@@ -36,7 +43,7 @@ export default function AboutUsDesktop() {
                     </div>
 
                 </div>
-            </div>
+            </motion.div>
         </>
     )
 }
