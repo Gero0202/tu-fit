@@ -137,8 +137,9 @@ export default function Home() {
         <div className={styles["modal"]}>
           <Modal
             title="CARTA"
-            img="/carta1.jpeg"
-            img2="/carta2.jpeg"
+            img="/cartadulcenuevo1.jpeg"
+            img2="/cartadulcenuevo2.jpeg"
+            img3="/cartadulcenuevo3.jpeg"
           />
         </div>
       </div>

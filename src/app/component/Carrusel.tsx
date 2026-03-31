@@ -106,8 +106,8 @@ export default function Carrusel() {
             >
                 <Modal
                     title="CARTA"
-                    img="/carta3.jpeg"
-                    img2="/carta4.jpeg"
+                    img="/cartasaladouno.jpeg"
+                    img2="/cartasaladodos.jpeg"
                 />
             </motion.div>
         </div>

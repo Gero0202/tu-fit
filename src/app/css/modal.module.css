@@ -110,15 +110,16 @@
          height: 100%;
     }
     .modal-content {
-        max-width: 996px;
+        
+        max-width: 1200px;
         border-radius: 10px;
         padding: 10px 7px 10px;
     }
 
     .close-btn {
         position: fixed;
-        right: 402px;
-        top: 18px;
+        right: 585px;
+        top: 95px;
     }
 
     .open-btn:hover {
@@ -130,7 +131,7 @@
 
     .close-btn:hover {
         background-color: #f69393;
-        transform: scale(1.1);
+        /* transform: scale(1.1); */
     }
 
     .close-btn:focus {
@@ -143,18 +144,20 @@
     }
 
     .images-container {
-        flex-wrap: wrap;
-        justify-content: center;
+        flex-wrap: nowrap;
+        /* justify-content: center; */
         align-items: center;
         overflow-y: hidden;
         max-height: 94vh;
         flex-direction: row;
-
+        
+       
     }
 
     .images-container img {
-        max-width: 49%;
+        max-width: 47%;
         border-radius: 10px;
         transition: transform 0.3s ease;
+        margin: 0 auto;
     }
 }

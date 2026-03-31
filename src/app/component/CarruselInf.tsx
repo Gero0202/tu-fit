@@ -191,8 +191,8 @@ export default function CarruselInfinito() {
                 <div className={styles["modal"]}>
                 <Modal
                     title="CARTA"
-                    img="/carta3.jpeg"
-                    img2="/carta4.jpeg"
+                    img="/cartasaladouno.jpeg"
+                    img2="/cartasaladodos.jpeg"
                 />
             </div>
             </div>

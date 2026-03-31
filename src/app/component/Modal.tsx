@@ -14,6 +14,7 @@ const montserrat = Montserrat({
 interface ModalProps {
     img: string
     img2: string
+    img3?: string
     title: string
 }
 
@@ -35,8 +36,11 @@ export default function Modal(props: ModalProps) {
                                 <IoMdClose />
                             </button>
                             <div className={styles["images-container"]}>
-                                <img src={props.img} alt="Carta Dulce 1" />
-                                <img src={props.img2} alt="Carta Dulce 2" />
+                                <img src={props.img} alt="Carta 1" />
+                                <img src={props.img2} alt="Carta 2" />
+                                {props.img3 && (
+                                    <img src={props.img3} alt="Carta 3" />
+                                )}
                             </div>
                         </div>
                     </div>
