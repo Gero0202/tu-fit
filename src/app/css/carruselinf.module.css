@@ -1,13 +1,15 @@
 .div-general {
-    background-color: #fffdd0;
+    background-color: #F4F1E8;
     position: relative;
-    height: 650px;
-    margin-bottom: 280px;
+    height: 800px;
+    
+    padding-top: 80px;
+    padding-bottom: 80px;
 }
 
 .div-dulce-title {
     position: relative;
-    margin-top: 12px;
+    
     margin-bottom: 20px;
 
 }

@@ -1,49 +1,165 @@
-/*
-  verde pistacho: #c5d439
-  naranja: #f29821
-  gris color logo: #948e6b
-  crema: #fffdd0
-*/
-
-/*dulce*/
-
-
-
-.div-dulce-title {
+/* CONTENEDOR PRINCIPAL CON FONDO MÁS OSCURO Y ATMOSFÉRICO */
+.container-sweet {
+  background-color: #212522; /* Tono oliva/carbón profundo súper elegante */
   position: relative;
-  margin-top: 12px;
-  margin-bottom: 20px;
-
+  padding: 140px 20px 50px 20px;
+  overflow: hidden;
 }
 
-.dulces-img {
-  display: block;
-  width: 173px;
-  margin: auto;
-}
-
-.dulces-title {
+/* =========================================================
+   LUCES AMBIENTALES FLOTANTES (GLOW ORBS)
+   ========================================================= */
+.ambientLightTopLeft {
   position: absolute;
-  top: 50%;
+  top: -120px;
+  left: -100px;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(149, 143, 107, 0.45) 0%, rgba(149, 143, 107, 0) 70%);
+  filter: blur(80px);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.ambientLightBottomRight {
+  position: absolute;
+  bottom: -100px;
+  right: -100px;
+  width: 550px;
+  height: 550px;
+  background: radial-gradient(circle, rgba(210, 198, 148, 0.35) 0%, rgba(210, 198, 148, 0) 70%);
+  filter: blur(90px);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.ambientLightCenter {
+  position: absolute;
+  top: 25%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: white;
-  font-size: 1.5rem;
-  font-weight: bold;
-  text-align: center;
+  width: 600px;
+  height: 350px;
+  background: radial-gradient(circle, rgba(149, 143, 107, 0.25) 0%, rgba(0, 0, 0, 0) 70%);
+  filter: blur(85px);
   pointer-events: none;
-
+  z-index: 0;
 }
 
-.container-sweet {
-  background-color: #E1DEAE;
-  margin-top: 223px;
-  /* margin-bottom: 40px; */
-
+/* =========================================================
+   ENCABEZADO DE SECCIÓN REINVENTADO
+   ========================================================= */
+.div-dulce-title {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 56px;
+  text-align: center;
 }
 
-.card-desktop {
-  background-color: #E1DEAE;
+/* BADGE SUPERIOR */
+.sectionBadge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(255, 255, 255, 0.07);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  padding: 6px 16px;
+  border-radius: 30px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #D2C694;
+  margin-bottom: 16px;
+  text-transform: uppercase;
+}
+
+.badgeDot {
+  width: 6px;
+  height: 6px;
+  background-color: #A3E635; /* Verde lima/brillante que indica frescura */
+  border-radius: 50%;
+  box-shadow: 0 0 8px #A3E635;
+}
+
+/* TÍTULO PRINCIPAL */
+.dulces-title {
+  color: #FFFFFF;
+  font-size: 2.8rem;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+  margin: 0 0 14px 0;
+  line-height: 1.1;
+}
+
+.highlightText {
+  background: linear-gradient(135deg, #E1DEAE 0%, #D2C694 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  
+  font-weight: 700;
+}
+
+/* SUBTÍTULO MODERNO CON ONDA */
+.dulceSubtitle {
+  font-size: 1.05rem;
+  color: #C2C7C3;
+  font-weight: 400;
+  max-width: 520px;
+  line-height: 1.6;
+  margin: 0 0 22px 0;
+}
+
+/* CHIPS DE VALOR AGREGADO */
+.featureChips {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+}
+
+.featureChips span {
+  font-size: 12px;
+  font-weight: 600;
+  color: #E1DEAE;
+  background: rgba(225, 222, 174, 0.1);
+  padding: 5px 14px;
+  border-radius: 20px;
+  border: 1px solid rgba(225, 222, 174, 0.2);
+}
+
+/* =========================================================
+   GRID RESPONSIVO
+   ========================================================= */
+.gridSweet {
+  position: relative;
+  z-index: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+@media (min-width: 640px) {
+  .dulces-title {
+    font-size: 3.4rem;
+  }
+  .gridSweet {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 28px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .gridSweet {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+  }
 }
 
 /*modal*/
@@ -51,7 +167,7 @@
 .modal {
   display: flex;
   justify-content: center;
-  margin-bottom: 40px;
+  margin-top: 50px;
 }
 
 /* efecto fade */

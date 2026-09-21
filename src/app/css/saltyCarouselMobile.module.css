@@ -1,0 +1,157 @@
+/* SECCIÓN FONDO CREMA CÁLIDO (#F4F1E8) */
+.saltySectionMobile {
+  background-color: #F4F1E8;
+  padding: 100px 20px 70px 20px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+}
+
+/* OCULTAR EN DESKTOP (A partir de 768px se oculta) */
+@media (min-width: 768px) {
+  .saltySectionMobile {
+    display: none;
+  }
+}
+
+/* =========================================================
+   ENCABEZADO EDITORIAL ASIMÉTRICO
+   ========================================================= */
+.editorialHeader {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  width: 100%;
+  max-width: 360px;
+  margin-bottom: 28px;
+}
+
+.titleColumn {
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+}
+
+.miniLabel {
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  color: #847E53;
+  margin-bottom: 4px;
+  text-transform: uppercase;
+}
+
+.title {
+  color: #212522;
+  font-size: 2.2rem;
+  font-weight: 800;
+  line-height: 0.95;
+  margin: 0;
+  letter-spacing: -0.5px;
+}
+
+.highlightText {
+  color: #847E53;
+  font-style: italic;
+  font-weight: 700;
+}
+
+.dividerLine {
+  width: 2px;
+  height: 48px;
+  background-color: rgba(132, 126, 83, 0.3);
+  flex-shrink: 0;
+}
+
+.headerDescription {
+  font-size: 0.82rem;
+  color: #555956;
+  line-height: 1.4;
+  margin: 0;
+}
+
+/* =========================================================
+   CARRUSEL ORIGINAL (MARCO ELEGANTE + DOTS)
+   ========================================================= */
+.carouselFrame {
+  position: relative;
+  width: 100%;
+  max-width: 360px;
+  height: 400px; /* Altura ideal mobile */
+  border-radius: 28px;
+  overflow: hidden;
+  box-shadow: 0 20px 40px rgba(33, 37, 34, 0.12);
+  border: 1px solid rgba(132, 126, 83, 0.25);
+  background-color: #EBE7D8;
+}
+
+.imageContainer {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.carouselImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* BADGE CONTADOR SUP. DERECHO */
+.counterBadge {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  background: rgba(33, 37, 34, 0.45);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  color: #FFFFFF;
+  padding: 4px 10px;
+  border-radius: 14px;
+  font-size: 11px;
+  font-weight: 700;
+  z-index: 10;
+  letter-spacing: 0.5px;
+}
+
+/* INDICADORES INFERIORES (DOTS) */
+.dotsContainer {
+  position: absolute;
+  bottom: 16px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 8px;
+  background: rgba(33, 37, 34, 0.35);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  padding: 6px 14px;
+  z-index: 0;
+}
+
+.dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.5);
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.activeDot {
+  width: 22px;
+  border-radius: 10px;
+  background-color: #FFFFFF;
+}
+
+.modal{
+    margin-top: 40px;
+    margin-bottom: 20px;
+}

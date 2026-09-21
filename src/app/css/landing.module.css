@@ -1,31 +1,80 @@
-/*
-  verde pistacho: #c5d439
-  naranja: #f29821
-  gris color logo: #948e6b
-  crema: #fffdd0
-*/
-
-.div-height {
-  height: 100svh;
-
+/* ESTRUCTURA Y FONDO CON IMAGEN SOLAMENTE EN EL LANDING */
+.heroSection {
+  position: relative;
+  min-height: 100svh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 16px 50px 16px;
+  overflow: hidden;
+  background-color: #E1DEAE; /* Color base del cliente */
+  z-index: 1;
 }
 
-/* LOGO */
+/* IMAGEN DE FONDO CON PSEUDOELEMENTO */
+.heroSection::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("/background-img.png") center/cover no-repeat;
+  z-index: -1;
+  background-attachment: fixed;
+}
 
+.container {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20%;
+}
+
+/* 1. LUCES DE FONDO AMBIENTALES */
+.glowOrange {
+  position: absolute;
+  top: -5%;
+  left: -5%;
+  width: 320px;
+  height: 320px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(242, 152, 33, 0.3) 0%, rgba(0, 0, 0, 0) 70%);
+  filter: blur(50px);
+  z-index: 0;
+  pointer-events: none;
+}
+
+.glowGreen {
+  position: absolute;
+  bottom: 0;
+  right: -5%;
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(197, 212, 57, 0.35) 0%, rgba(0, 0, 0, 0) 70%);
+  filter: blur(55px);
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* 2. TU LOGO CON PINZELADAS (INTACTO) */
 .div-logo {
   text-align: center;
-  margin-top: 27px;
+  margin-top: 15px;
   position: relative;
-  margin-bottom: 60px;
-  overflow: hidden;
-
+  margin-bottom: 55px;
 }
 
 .logo-principal {
-  width: 90px;
+  width: 95px;
   position: relative;
   z-index: 1;
-
 }
 
 .div-lazos {
@@ -42,7 +91,6 @@
   width: 260px;
   margin-left: -95px;
   max-width: 90vw;
-
 }
 
 .lazoVerde {
@@ -51,93 +99,215 @@
   max-width: 90vw;
 }
 
-/* titulo */
-
-.div-textos {
+/* 3. TEXTOS Y CONTENIDO EN TONOS CLAROS/CREMA */
+.contentWrapper {
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  align-items: center;
+  text-align: center;
+  max-width: 750px;
+  width: 100%;
 }
 
-.titulo-principal {
+.tituloPrincipal {
   color: #948e6b;
   text-shadow:
     1px 0 0 #FDFDFB,
     -1px 0 0 #FDFDFB,
     0 2px 0 #FDFDFB,
     0 -1px 0 #FDFDFB;
-  font-size: 55px;
-  font-weight: bold;
-  text-align: center;
+  font-size: 52px;
+  margin: 0;
+  line-height: 1;
+}
 
+.badgeWrapper {
+  margin-top: 14px;
+  margin-bottom: 18px;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 16px;
+  background: rgba(255, 255, 255, 0.22);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  color: #FFFFFF;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 30px;
+  font-size: 13px;
+  font-weight: 600;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.badgeIcon {
+  color: #C5D439;
+}
+
+.textoPrincipal {
+  font-size: 18px;
+  color: #FFFDD0; /* Tono Crema para destacar sobre el fondo */
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+  line-height: 1.6;
+  margin: 0 0 25px 0;
+  width: 90%;
+  font-weight: 500;
 }
 
 .textDesktop {
   display: none;
 }
 
-/* texto principal */
-
-.texto-principal {
-  font-size: 20px;
-  width: 80%;
-  text-align: center;
-  margin: 0 auto;
-  color: #FDFDFB;
-  margin-top: 67px;
-  margin-bottom: 109px;
+.actionWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
 }
 
-.texto-secundario {
-  font-size: 20px;
-  width: 80%;
-  text-align: center;
-  margin: 0 auto;
-  color: #FDFDFB;
-  padding-bottom: 50px;
+.textoSecundario {
+  font-size: 17px;
+  color: #FCFCFC;
+  text-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
+  font-weight: 600;
+  margin: 0;
 }
 
-
-.enlace-wsp {
-    z-index: 999;
-    transition: all 0.5s ease-in-out;
+/* 4. BOTONES Y ACCIONES */
+.btnWsp {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background-color: #F29821;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 16px;
+  padding: 14px 28px;
+  border-radius: 50px;
+  text-decoration: none;
+  box-shadow: 0 8px 20px rgba(242, 152, 33, 0.35);
+  transition: background-color 0.3s ease;
 }
 
-.middle {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    margin: auto;
+.btnWsp:hover {
+  background-color: #e08917;
 }
 
-.bottom {
-    position: fixed;
-    bottom: 30px;
-    right: 20px;
+.iconWspBtn {
+  font-size: 22px;
 }
 
-
-.icono-wsp {
-  font-size: 48px;
-  color: #19d30c;
+.btnWspFloating {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  background-color: #25d366;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 10px 25px rgba(37, 211, 102, 0.4);
+  z-index: 1000;
+  text-decoration: none;
 }
 
-
-
-/* efecto fade */
-.fadeIn {
-  opacity: 0;
-  animation: fadeInAnim 2s ease forwards;
+.iconWspFloating {
+  font-size: 32px;
 }
 
-@keyframes fadeInAnim {
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+/* 5. TARJETAS E ÍCONOS FLOTANTES EN MOBILE & DESKTOP */
+.floatingCard {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 14px;
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  border-radius: 14px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  z-index: 3;
 }
 
+.floatingCard strong {
+  display: block;
+  font-size: 12px;
+  color: #FFFFFF;
+}
+
+.floatingCard span {
+  font-size: 10px;
+  color: #FFFDD0;
+}
+
+.cardIconBoxGreen, .cardIconBoxOrange {
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+}
+
+.cardIconBoxGreen {
+  background-color: rgba(197, 212, 57, 0.85);
+  color: #2e3300;
+}
+
+.cardIconBoxOrange {
+  background-color: rgba(242, 152, 33, 0.85);
+  color: #ffffff;
+}
+
+/* Posición en Mobile */
+.cardLeft {
+  top: 117%;
+  left: 2%;
+}
+
+.cardRight {
+  display: none; /* Se activa en pantallas medianas/grandes para no recargar mobile */
+}
+
+/* Badge compacto de corazón exclusivo para mobile */
+.mobileFloatingBadge {
+  position: absolute;
+  bottom: -15%;
+  right: 4%;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 20px;
+  color: #FFFFFF;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.mobileHeartIcon {
+  color: #f2526e;
+  font-size: 13px;
+}
+
+/* MEDIA QUERIES */
 @media (min-width: 700px) {
+  .heroSection::before {
+    background-position: top;
+  }
+
   .textMobile {
     display: none;
   }
@@ -145,46 +315,58 @@
   .textDesktop {
     display: inline;
   }
-}
 
-@media (min-width: 1600px) {
-  .card-desktop {
-    background-color: #E1DEAE;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 40px;
-    margin: 0 auto;
-    width: 100%;
-    border-radius: 0px;
-    padding: 2px 59px;
-    margin-bottom: 30px;
+  .tituloPrincipal {
+    font-size: 78px;
   }
 
-  .texto-principal {
-    margin-bottom: 200px;
-    line-height: 2.3;
+  .textoPrincipal {
     font-size: 20px;
+    margin-bottom: 35px;
   }
 
-  .titulo-principal {
-    font-size: 80px;
-    color: #aba47d;
+  .cardLeft {
+    top: 35%;
+    left: 4%;
+    padding: 12px 18px;
   }
 
-
-  .icono-wsp {
-    font-size: 50px;
-    transition: transform 0.3s ease, color 0.3s ease;
+  .cardRight {
+    display: flex;
+    bottom: 18%;
+    right: 4%;
+    padding: 12px 18px;
   }
 
-  .icono-wsp:hover {
-    transform: scale(1.4);
-    color: #16a20c;
+  .floatingCard strong {
+    font-size: 13px;
   }
 
-  .bottom {
-    
-    bottom: 30px;
-    right: 40px;
+  .floatingCard span {
+    font-size: 11px;
+  }
+
+  .mobileFloatingBadge {
+    display: none; /* En desktop usaremos las dos tarjetas grandes */
+  }
 }
+
+@media (min-width: 1200px) {
+  .cardLeft {
+    left: 8%;
+  }
+
+  .cardRight {
+    right: 8%;
+  }
+
+  .glowOrange {
+    width: 480px;
+    height: 480px;
+  }
+
+  .glowGreen {
+    width: 520px;
+    height: 520px;
+  }
 }

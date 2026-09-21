@@ -1,46 +1,140 @@
 .footer {
-    background-color:  #504d40;
-    color: #ffffff;
-    text-align: center;
-    padding: 0.8rem 1rem;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.3);
-    width: 100%;
-    margin: auto;
-}
-.title{
-    margin:  0;
-    font-size: 0.9rem;
-    text-align: center;
+  background: #121413;
+  color: #E2E8F0;
+  padding: 50px 20px 24px 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  font-family: inherit;
 }
 
-.text {
-    margin: 0.3rem 0;
-    font-size: 0.9rem;
- 
+.footerContainer {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 28px;
+  padding-bottom: 36px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
 }
 
-.link {
-    color: #f29821;
-    text-decoration: none;
+@media (min-width: 768px) {
+  .footerContainer {
+    flex-direction: row;
+    align-items: center;
+  }
 }
 
-.link:hover {
-    text-decoration: underline;
+/* Marca / Titulo */
+.brandSection {
+  text-align: center;
 }
 
-@media (min-width: 700px) {
-    .title{
-        font-size: 1em;
-    }
-    .text{
-        text-align: center;
-    }
-    .divText{
-        margin-left: 50px;
-        display: flex;
-        justify-content: center;
-        gap: 60px;
-    }
+@media (min-width: 768px) {
+  .brandSection {
+    text-align: left;
+  }
 }
 
+.title {
+  font-size: 1.8rem;
+  font-weight: 900;
+  letter-spacing: 2.5px;
+  color: #FFFFFF;
+  margin: 0 0 6px 0;
+  background: linear-gradient(135deg, #FFFFFF 0%, #A3E635 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.tagline {
+  font-size: 0.88rem;
+  color: #94A3B8;
+  margin: 0;
+}
+
+/* Sección de Enlaces y Contacto */
+.linksSection {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.contactItem {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: rgba(255, 255, 255, 0.04);
+  padding: 10px 18px;
+  border-radius: 30px;
+  color: #CBD5E1;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 500;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  transition: all 0.3s ease;
+}
+
+.contactItem:hover {
+  background: rgba(255, 255, 255, 0.09);
+  color: #FFFFFF;
+  border-color: rgba(255, 255, 255, 0.2);
+  transform: translateY(-2px);
+}
+
+.iconWhatsapp {
+  color: #25D366;
+  transition: transform 0.3s ease;
+}
+
+.iconInstagram {
+  color: #E1306C;
+  transition: transform 0.3s ease;
+}
+
+.contactItem:hover .iconWhatsapp,
+.contactItem:hover .iconInstagram {
+  transform: scale(1.18);
+}
+
+/* Barra inferior (Copyright) */
+.bottomBar {
+  max-width: 1100px;
+  margin: 24px auto 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  font-size: 0.82rem;
+  color: #64748B;
+}
+
+@media (min-width: 768px) {
+  .bottomBar {
+    flex-direction: row;
+  }
+}
+
+.copyright {
+  margin: 0;
+}
+
+.brandHighlight {
+  color: #A3E635;
+  font-weight: 600;
+}
+
+.madeWith {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.heartIcon {
+  color: #EF4444;
+  font-size: 0.85rem;
+}

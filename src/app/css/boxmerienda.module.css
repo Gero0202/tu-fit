@@ -1,172 +1,272 @@
-.div-general {
-    width: 100%;
-    background-color: #fffef3;
-    margin-top: 30%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 30px;
-    text-align: center;
-    font-family: "Montserrat", sans-serif;
+/* SECCIÓN FULL WIDTH COMPLETA CON FONDO CREMA CÁLIDO */
+.fullWidthSection {
+  position: relative;
+  width: 100%;
+  background-color: #F4F1E8;
+  padding: 100px 24px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.primero {
-    margin-top: 40px;
-    font-size: 1.2em;
-    color: #c5d439;
-    font-weight: 500;
-
+/* BURBUJAS DE LUZ / GLOW DE FONDO */
+.glowCircle {
+  position: absolute;
+  width: 180px;
+  height: 380px;
+  border-radius: 50%;
+  filter: blur(80px);
+  pointer-events: none;
 }
 
-.div-box {
-    display: flex;
-    align-items: center;
-    gap: 5px;
+.glowOrange {
+  background: rgba(232, 122, 62, 0.22);
+  top: -50px;
+  left: -50px;
 }
 
-.left-line {
-    width: 80px;
-    background-color: #c5d439;
-    height: 2px;
-    border-radius: 20px;
+.glowGreen {
+  background: rgba(132, 126, 83, 0.25);
+  bottom: -60px;
+  right: -50px;
 }
 
-.right-line {
-    width: 80px;
-    background-color: #c5d439;
-    height: 2px;
-    border-radius: 20px;
+/* CONTENEDOR CENTRAL */
+.container {
+  position: relative;
+  z-index: 2;
+  max-width: 850px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
-.box-text {
-    font-size: 21px;
-    color: #948e6b;
+/* BADGE SUPERIOR CON DESTELLOS */
+.topBadge {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: #FFFFFF;
+  border: 1px solid rgba(132, 126, 83, 0.3);
+  padding: 8px 20px;
+  border-radius: 30px;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  color: #212522;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.04);
+  margin-bottom: 28px;
+  cursor: default;
 }
 
-.tercero {
-    font-size: 17px;
-    width: 90%;
-    color: #c5d439;
-    font-weight: 500;
-    margin-bottom: 40px;
+.badgeIconOrange {
+  color: #E87A3E;
 }
 
-.div-text {
-    width: 90%;
-    margin: 0;
-    margin-bottom: 43px;
+.badgeIconGreen {
+  color: #847E53;
 }
 
-.cuarto {
-    font-size: 17px;
-    width: 100%;
-    font-weight: 500;
-    color: #948e6b;
+/* CABECERA DE TITULO */
+.headerBox {
+  margin-bottom: 32px;
 }
 
-.quinto {
-    font-size: 17px;
-    width: 77%;
-    color: #c5d439;
-    margin-bottom: 30px;
-    font-weight: 500;
+.preTitle {
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 3px;
+  color: #847E53;
+  margin-bottom: 8px;
 }
 
-.sexto {
-    font-size: 17px;
-    width: 77%;
-    color: #c5d439;
-    font-weight: 500;
+.mainTitle {
+  font-size: 3.2rem;
+  font-weight: 900;
+  color: #212522;
+  line-height: 1;
+  margin: 0 0 16px 0;
+  letter-spacing: -1px;
 }
 
-.corner-div {
-    display: flex;
-    justify-content: space-between;
-    gap: 30px;
-    position: relative;
-    top: 0em;
+.orangeHighlight {
+  color: #E87A3E;
+  position: relative;
+  display: inline-block;
 }
 
-.corner1,
-.corner2 {
-    height: 150px;
-    width: 55vw;
+.mainSubtitle {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #4A4E4B;
+  max-width: 580px;
+  margin: 0 auto;
 }
 
-.corner2 {
-    transform: rotateY(180deg);
+/* CHIPS / PILLS DE BENEFICIOS */
+.featuresGrid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 14px;
+  margin-bottom: 48px;
+  width: 100%;
 }
 
-@media (min-width: 500px) and (max-width: 1299px) {
-    .div-general {
-        width: 81%;
-        min-height: auto;
-        margin: auto;
-        margin-top: 28%;
-        margin-bottom: 29%;
-        border-radius: 20px;
-    }
+.featurePill {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: #FFFFFF;
+  border: 1px solid rgba(132, 126, 83, 0.2);
+  padding: 12px 24px;
+  border-radius: 40px;
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #212522;
+  box-shadow: 0 6px 18px rgba(33, 37, 34, 0.04);
+  cursor: default;
 }
 
-
-@media (min-width: 1300px) {
-    .div-general-desktop{
-        background-color: #88846e;
-        height: auto;
-        /* margin-bottom: 70px; */
-        margin-top: 10%;
-    }
-
-    .div-general {
-        width: 70%;
-        margin: auto;
-        margin-top: 5%;
-        margin-bottom: 5%;
-        border-radius: 20px;
-        min-height: 67vh;
-    }
-
-    .corner-div {
-        top: 0.3em;
-        width: 102%;
-
-    }
-
-    .corner1,
-    .corner2 {
-        width: 9vw;
-    }
-
-    .primero {
-        font-size: 1.2em;
-    }
-
-    .box-text {
-        font-size: 1.3em;
-    }
-
-    .left-line {
-        width: 200px;
-    }
-
-    .right-line {
-        width: 200px;
-    }
-
-    .tercero {
-        font-size: 1.2em;
-    }
-
-    .cuarto {
-        font-size: 1.2em;
-    }
-
-    .quinto {
-        font-size: 1.2em;
-    }
-
-    .sexto {
-        font-size: 1.3em;
-    }
+.checkIconGreen {
+  color: #847E53;
 }
 
+.checkIconOrange {
+  color: #E87A3E;
+}
+
+/* CARDS FLOTANTES EN LADOS DE PANTALLA */
+.floatingCard {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  background: #FFFFFF;
+  padding: 14px 20px;
+  border-radius: 20px;
+  box-shadow: 0 15px 35px rgba(33, 37, 34, 0.08);
+  border: 1px solid rgba(132, 126, 83, 0.18);
+  z-index: 3;
+  pointer-events: none;
+}
+
+.floatingCard h4 {
+  margin: 0;
+  font-size: 0.9rem;
+  font-weight: 800;
+  color: #212522;
+}
+
+.floatingCard p {
+  margin: 2px 0 0 0;
+  font-size: 0.75rem;
+  color: #6C706D;
+  font-weight: 600;
+}
+
+.floatingIconOrange {
+  width: 40px;
+  height: 40px;
+  border-radius: 12px;
+  background: rgba(232, 122, 62, 0.12);
+  color: #E87A3E;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.floatingIconGreen {
+  width: 40px;
+  height: 40px;
+  border-radius: 12px;
+  background: rgba(132, 126, 83, 0.15);
+  color: #847E53;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cardTopLeft {
+  top: 15%;
+  left: 6%;
+}
+
+.cardBottomRight {
+  bottom: 15%;
+  right: 6%;
+}
+
+/* ÁREA CALL TO ACTION FINAL */
+.callToActionArea {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.questionHeader {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #212522;
+  margin: 0 0 6px 0;
+}
+
+.sloganParagraph {
+  font-size: 1.05rem;
+  color: #847E53;
+  font-weight: 700;
+  margin: 0 0 28px 0;
+}
+
+.brandButton {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  background: linear-gradient(135deg, #212522 0%, #343A36 100%);
+  color: #F4F1E8;
+  padding: 16px 36px;
+  border-radius: 50px;
+  font-size: 1rem;
+  font-weight: 800;
+  letter-spacing: 2px;
+  box-shadow: 0 12px 28px rgba(33, 37, 34, 0.22), 0 0 0 4px rgba(232, 122, 62, 0.15);
+  cursor: pointer;
+  transition: box-shadow 0.3s ease;
+  text-decoration: none;
+}
+
+.brandButton:hover {
+  box-shadow: 0 16px 35px rgba(232, 122, 62, 0.35), 0 0 0 6px rgba(232, 122, 62, 0.25);
+}
+
+.brandIcon {
+  color: #FF9F43;
+}
+
+/* RESPONSIVE DESIGN (TABLETS / MOBILES) */
+@media (max-width: 992px) {
+  .floatingCard {
+    display: none; /* Se ocultan en pantallas pequeñas para evitar solapamientos */
+  }
+
+  .mainTitle {
+    font-size: 2.6rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .fullWidthSection {
+    padding: 130px 40px;
+  }
+
+  .mainTitle {
+    font-size: 4.2rem;
+  }
+
+  .preTitle {
+    font-size: 14px;
+  }
+}

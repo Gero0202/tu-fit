@@ -1,5 +1,5 @@
 .open-btn {
-    background-color: #fffdd0;
+    background-color: #ffffff;
     color: #f29821;
     border: 2px solid #f29821;
     border-radius: 30px;
@@ -8,7 +8,7 @@
     cursor: pointer;
     transition: all 0.3s ease;
     box-shadow: 0 4px 8px rgba(148, 142, 107, 0.3);
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
 }
 
 
@@ -117,7 +117,7 @@
     }
 
     .close-btn {
-        position: fixed;
+        position: static;
         right: 585px;
         top: 95px;
     }
@@ -146,7 +146,7 @@
     .images-container {
         flex-wrap: nowrap;
         /* justify-content: center; */
-        align-items: center;
+        align-items: normal;
         overflow-y: hidden;
         max-height: 94vh;
         flex-direction: row;
