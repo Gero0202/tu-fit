@@ -29,16 +29,16 @@ export const SweetCard: React.FC<SweetCardProps> = ({
 }) => {
   const isEven = index % 2 === 0
 
-  const staggerDelay = (index % 3) * 0.15
+  const staggerDelay = (index % 3) * 0.10
 
   return (
     <motion.article
       className={`${styles.card} ${isEven ? styles.even : styles.odd}`}
-      initial={{ opacity: 0, y: 40 }}
+      initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: '-60px' }}
       transition={{
-        duration: 0.6,
+        duration: 0.35,
         delay: staggerDelay,
         ease: 'easeOut',
       }}

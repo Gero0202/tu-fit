@@ -20,10 +20,10 @@ export const OurStory: React.FC = () => {
         {/* ENCABEZADO DE SECCIÓN */}
         <motion.div 
           className={styles.header}
-          initial={{ opacity: 0, y: 30 }}
+          initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: '-50px' }}
-          transition={{ duration: 0.7 }}
+          transition={{ duration: 0.3 }}
         >
           <div className={styles.badge}>
             <BsStars size={14} className={styles.badgeIcon} />
@@ -46,7 +46,7 @@ export const OurStory: React.FC = () => {
             initial={{ opacity: 0, scale: 0.95 }}
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true, margin: '-50px' }}
-            transition={{ duration: 0.7, delay: 0.2 }}
+            transition={{ duration: 0.3, delay: 0.2 }}
           >
             <div className={styles.imageContainer}>
               <img 
@@ -87,7 +87,7 @@ export const OurStory: React.FC = () => {
               initial={{ opacity: 0, x: 20 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true, margin: '-50px' }}
-              transition={{ duration: 0.6, delay: 0.3 }}
+              transition={{ duration: 0.3, delay: 0.3 }}
             >
               <p>
                 "Cuidarte es temporal, pero aprender a comer bien es un hábito que dura toda la vida."
@@ -102,7 +102,7 @@ export const OurStory: React.FC = () => {
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: '-50px' }}
-                transition={{ duration: 0.5, delay: 0.4 }}
+                transition={{ duration: 0.3, delay: 0.4 }}
               >
                 <div className={styles.iconBox}>
                   <FaHandshake size={20} />
@@ -120,7 +120,7 @@ export const OurStory: React.FC = () => {
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: '-50px' }}
-                transition={{ duration: 0.5, delay: 0.5 }}
+                transition={{ duration: 0.3, delay: 0.3 }}
               >
                 <div className={styles.iconBox}>
                   <FaShieldAlt size={20} />
@@ -141,7 +141,7 @@ export const OurStory: React.FC = () => {
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.6, delay: 0.6 }}
+              transition={{ duration: 0.3, delay: 0.3 }}
             >
               <span>Estamos para acompañarte en cada paso.</span>
             </motion.div>
